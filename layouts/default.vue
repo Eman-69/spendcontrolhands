@@ -12,11 +12,7 @@
 
 <style scoped>
 .background-main {
-  background: /*url("../img/page1dots.png"), */ linear-gradient(
-    to bottom,
-    #4129f4,
-    #0f0f0f
-  ) !important;
+  background: linear-gradient(to bottom, #4129f4, #0f0f0f) !important;
   background-position: bottom, center, 0% 0%, 100% 0%;
   background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
   height: 100vh;

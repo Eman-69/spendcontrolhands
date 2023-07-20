@@ -48,7 +48,7 @@
       </svg>
     </div>
     <div class="graph-container">
-      <img src="../images/page1/graph.png" alt="graph" class="graph" />
+      <img src="/images/page1/graph.png" alt="graph" class="graph" />
       <svg
         class="graphdot"
         width="199"
