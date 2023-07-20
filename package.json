@@ -1,0 +1,24 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@hypernym/nuxt-anime": "^2.1.0",
+    "@nuxt/image-edge": "^1.0.0-27968280.9739e4d",
+    "@types/node": "^18.11.18",
+    "nuxt": "^3.1.0",
+    "vite-plugin-vuetify": "^1.0.2"
+  },
+  "dependencies": {
+    "@jamescoyle/vue-icon": "^0.1.2",
+    "@mdi/font": "^7.1.96",
+    "@mdi/light-js": "^0.2.63",
+    "sass": "^1.63.6",
+    "vuetify": "^3.2.1"
+  }
+}
