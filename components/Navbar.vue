@@ -55,7 +55,7 @@
           </li>
           <li>
             <v-btn
-              to="/about_us"
+              to="/about-us"
               class="about-us text-white"
               color="rgba(0,0,0,0)"
               >About Us</v-btn

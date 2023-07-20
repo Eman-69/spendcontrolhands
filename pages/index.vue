@@ -1,6 +1,5 @@
 <template>
   <div class="main-background">
-    <v-btn @click="drawer = !drawer">hey there</v-btn> &nbsp;
     <div class="animation"><Animation :scrollPer="scrollPer" /></div>
     <div class="nav"><Navbar /></div>
     <div class="container" ref="el" @scroll="handleScroll()">
