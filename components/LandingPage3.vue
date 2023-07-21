@@ -20,7 +20,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .main-container {
   width: 100vw;
   height: 100vh;

@@ -28,7 +28,7 @@ const handleScroll = () => {
 };
 </script>
 
-<style>
+<style scoped>
 .animation {
   position: absolute;
   height: 100vh;
@@ -42,5 +42,6 @@ const handleScroll = () => {
 }
 .container > div {
   scroll-snap-align: start;
+  height: 100vh;
 }
 </style>

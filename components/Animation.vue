@@ -94,7 +94,7 @@
     </svg>
   </div>
 </template>
-<style>
+<style scoped>
 template {
   width: 100vw;
   height: 100vh;
