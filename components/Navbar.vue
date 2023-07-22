@@ -4,14 +4,19 @@
       <span class="logo navLogo"
         ><a><img src="/images/logoLight.png" alt="KenFront logo" /></a
       ></span>
-      <i class="bx bx-menu sidebarOpen"></i>
+      <!-- <i class='bx bx-menu sidebarOpen' ></i> -->
 
+      <v-app-bar-nav-icon
+        class="siderbarOpen text-white"
+        variant="text"
+        @click.stop="drawer = !drawer"
+      ></v-app-bar-nav-icon>
       <div class="menu">
         <div class="logo-toggle">
           <span class="logo"
             ><a><img src="/images/logoLight.png" alt="KenFront logo" /></a
           ></span>
-          <i class="bx bx-x siderbarClose"></i>
+          <!-- <i class='bx bx-x siderbarClose'></i>  -->
         </div>
 
         <ul class="nav-links">
@@ -27,10 +32,11 @@
               </template>
 
               <v-list>
-                <v-list-item v-for="(item, index) in items" :key="index">
-                  <v-list-item-services>{{
-                    item.services
-                  }}</v-list-item-services>
+                <v-list-item
+                  v-for="(item, index) in items[0].value"
+                  :key="index"
+                >
+                  <v-list-item-title>{{ item.service }}</v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-menu>
@@ -47,15 +53,18 @@
               </template>
 
               <v-list>
-                <v-list-item v-for="(item, index) in products" :key="index">
-                  <v-list-item-product>{{ item.product }}</v-list-item-product>
+                <v-list-item
+                  v-for="(item, index) in items[1].value"
+                  :key="index"
+                >
+                  <v-list-item-title>{{ item.product }}</v-list-item-title>
                 </v-list-item>
               </v-list>
             </v-menu>
           </li>
           <li>
             <v-btn
-              to="/about-us"
+              to="/about_us"
               class="about-us text-white"
               color="rgba(0,0,0,0)"
               >About Us</v-btn
@@ -75,15 +84,37 @@
 <script>
 export default {
   data: () => ({
+    drawer: false,
+    group: null,
     items: [
-      { services: "Data Science as a Service" },
-      { services: "IDEA" },
-      { services: "Incorta" },
-      { services: "Enterprises Analytics" },
+      {
+        title: "Services",
+        value: [
+          { service: "Data Science as a Service" },
+          { service: "IDEA" },
+          { service: "Incorta" },
+          { service: "Enterprises Analytics" },
+        ],
+      },
+      {
+        title: "Products",
+        value: [{ product: "Carrom Live" }, { product: "Spend Control" }],
+      },
+      {
+        title: "About Us",
+      },
+      {
+        title: "Contact Us",
+      },
     ],
-    products: [{ product: "Carrom Live" }, { product: "Spend Control" }],
   }),
+  watch: {
+    group() {
+      this.drawer = false;
+    },
+  },
 };
+
 // const body = document.querySelector("template"),
 //       nav = document.querySelector("nav"),
 //       sidebarOpen = document.querySelector(".sidebarOpen");
@@ -124,8 +155,10 @@ nav .nav-bar {
   align-items: center;
   justify-content: space-between;
 }
-
-nav .nav-bar .sidebarOpen {
+/* v-navigation-drawer{
+        top: 20;
+    } */
+.sidebarOpen {
   color: white;
   font-size: 2rem;
   padding: 5px;

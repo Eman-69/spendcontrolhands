@@ -30,7 +30,7 @@
             <v-sheet style="background: transparent">
               <v-img
                 class="group-ellipse"
-                src="/images/ellipses/group4.svg"
+                src="/images/ellipses/ellipse-data-service.png"
               ></v-img>
             </v-sheet>
           </div>
@@ -38,7 +38,7 @@
             <v-sheet style="background: transparent">
               <v-img
                 class="group-ellipse"
-                src="/images/ellipses/group4.svg"
+                src="/images/ellipses/ellipse-data-service.png"
               ></v-img>
             </v-sheet>
           </div>

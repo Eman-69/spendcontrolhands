@@ -30,7 +30,7 @@
             <v-sheet style="background: transparent">
               <v-img
                 class="group-ellipse"
-                src="/images/ellipses/group4.svg"
+                src="/images/ellipses/ellipse-data-service.png"
               ></v-img>
             </v-sheet>
           </div>
@@ -38,7 +38,7 @@
             <v-sheet style="background: transparent">
               <v-img
                 class="group-ellipse"
-                src="/images/ellipses/group4.svg"
+                src="/images/ellipses/ellipse-data-service.png"
               ></v-img>
             </v-sheet>
           </div>
@@ -357,9 +357,9 @@ let setActiveStep = async (stepNumber) => {
 }
 .service-title {
   position: absolute;
-  transform: translate(-40%, -50%);
-  top: 50%;
-  left: 20%;
+  transform: translate(-30%, -50%);
+  top: 60%;
+  left: 30%;
   font-weight: 700;
   font-size: 50px;
 }
@@ -425,7 +425,7 @@ let setActiveStep = async (stepNumber) => {
   }
   .service-title {
     font-size: 50px;
-    left: 25%;
+    left: 35%;
   }
   .service-subtitle {
     font-size: 46px;

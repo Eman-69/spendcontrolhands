@@ -1,33 +1,44 @@
 <template>
-  <div class="main-container">
+  <div class="page-container">
     <section class="page1-texts">
-      <h1 class="page1-title">
-        Unleashing the Power of Analytics, AI & Data Science for Business
-        Success
-      </h1>
-      <div class="page1arrow">
-        <img src="/images/download.png" alt="" class="downarrow" />
-      </div>
-    </section>
+      <h1 class="page1-title">Unleashing the Power of Analytics, AI & Data Science for Business Success</h1>
+      <div class="page1arrow"><img src="../images/download.png" alt="" class="downarrow" /></div>
+    </section>  
   </div>
 </template>
 <style scoped>
-.main-container {
+template{
   width: 100vw;
   height: 100vh;
 }
-.page1-texts {
-  margin: 40vh 10vw 0vh;
-  width: 80vw;
-  height: 60vh;
+.page1-texts{
+  margin: 50vh 30vw 0vh 30vw;
+  width: 40vw;
+  height: 50vh;
   display: grid;
-  grid-template-rows: 30vh 30vh;
   text-align: center;
 }
 /* .page1-title{
 } */
-.downarrow {
-  height: 25vh;
+.downarrow{
+    height: 25vh;
+}
+
+@media only screen and (max-width:1024px)
+  {
+    .page1-texts{
+      margin-top:45vh ;
+    }
+  .downarrow{
+    height: 20vh;
+  }
+}
+@media only screen and (max-width:800px)
+  {
+    .page1-texts{
+      margin:40vh 20vw 0vh 20vw ;
+      width:60vw;
+    }
 }
 </style>
 

@@ -16,21 +16,18 @@ export default defineNuxtConfig({
       script: [
         // <script src="https://myawesome-lib.js"></script>
         // { src: "https://awesome-lib.js" },
-        
+
         //<script src="https://kit.fontawesome.com/1c9ad4b785.js" crossorigin="anonymous"></script>
-        {src:"https://kit.fontawesome.com/1c9ad4b785.js"}
+        { src: "https://kit.fontawesome.com/1c9ad4b785.js" },
       ],
       link: [
-        //<link rel="preconnect" href="https://fonts.googleapis.com">
-        {rel:"preconnect",href:"https://fonts.googleapis.com"},
-        {rel:"preconnect",href:"https://fonts.gstatic.com",crossorigin:"anonymous"},
-        {rel:"stylesheet",href:"https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap"},
-        //<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        //<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&display=swap" rel="stylesheet">
-        //font-awesome
+        { rel: "stylesheet", href: "https://fonts.cdnfonts.com/css/nexa-bold" },
+
         // ===== Boxicons CSS =====
-        { href:"https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css",rel:"stylesheet" } 
-        // { rel: "stylesheet", href: "https://awesome-lib.css" },
+        {
+          href: "https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css",
+          rel: "stylesheet",
+        },
       ],
       // please note that this is an area that is likely to change
       style: [
