@@ -38,7 +38,7 @@
           <div class="service-title">Data Science as a Service</div>
         </v-container>
         <!-- section 1b -->
-        <v-container fluid style="position: relative; height: 50vh">
+        <v-container fluid class="section1a">
           <v-row class="fill-height d-none d-md-flex">
             <v-col
               class="fill-height my-auto"
@@ -65,9 +65,9 @@
               <div class="my-auto service-description">
                 Are you ready to get started or accelerate your Data Science, AI
                 or ML initiatives? We offer a revolutionary “as a service”
-                approach to scale the direction and costs of Data
-                Science.Everything you need and nothing you don’t make this a
-                game changer.
+                approach to scale the direction and costs of Data Science.
+                Everything you need and nothing you don’t make this a game
+                changer.
               </div>
             </v-col>
           </v-row>
@@ -88,7 +88,39 @@
           </v-container>
         </v-container>
       </div>
-      <div class="section">2</div>
+      <div class="section">
+        <v-divider class="text-white"></v-divider>
+        <div class="section-margin-top"></div>
+        <v-container>
+          <v-row>
+            <v-col xl="4" lg="6" md="6" sm="6" cols="12">
+              <v-row class="justify-center">
+                <v-col xl="3" lg="4" md="4" sm="8" cols="6">
+                  <v-sheet style="background: transparent">
+                    <v-img
+                      :aspect-ratio="1 / 1"
+                      src="/images/services/scalable-like-cloud.png"
+                    >
+                    </v-img>
+                  </v-sheet>
+                </v-col>
+              </v-row>
+              <v-row>
+                <v-col xl="9" lg="8" md="8" sm="12" cols="12">
+                  <div class="service-each-title mx-auto">
+                    Collaborative Thinking
+                  </div>
+                  <div class="service-each-subtitle mx-auto">
+                    Our unique approach will bring business and IT together to
+                    present the right analytics roadmap and strategy.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-col>
+          </v-row>
+        </v-container>
+        <v-divider class="text-white"></v-divider>
+      </div>
     </div>
   </div>
 </template>
@@ -106,6 +138,13 @@
   scroll-snap-align: start;
   scroll-snap-stop: always;
 }
+.section1a.section1b {
+  position: relative;
+  height: 50vh;
+}
+.section-margin-top {
+  padding-top: 18vh;
+}
 .service-title {
   position: absolute;
   transform: translate(-40%, -50%);
@@ -113,6 +152,14 @@
   left: 20%;
   font-weight: 700;
   font-size: 50px;
+}
+.service-each-title {
+  font-weight: 500;
+  font-size: 40px;
+}
+.service-each-subtitle {
+  font-weight: 300;
+  font-size: 20px;
 }
 .service-subtitle {
   font-size: 46px;
@@ -235,7 +282,12 @@
     font-size: 32px;
   }
 }
-
+.section1a {
+  height: 40vh;
+}
+.section1b {
+  height: 60vh;
+}
 @media only screen and (max-width: 500px) {
   .service-title {
     font-size: 28px;
