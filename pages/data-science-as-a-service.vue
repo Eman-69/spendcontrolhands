@@ -539,19 +539,20 @@ let setActiveStep = async (stepNumber) => {
   .service-title {
     font-size: 32px;
   }
+
+  .service-each-title {
+    font-size: 21px;
+    line-height: 1;
+  }
+  .service-each-subtitle {
+    font-size: 11px;
+  }
 }
 .section1a {
   height: 40vh;
 }
 .section1b {
   height: 60vh;
-}
-.service-each-title {
-  font-size: 21px;
-  line-height: 1;
-}
-.service-each-subtitle {
-  font-size: 11px;
 }
 @media only screen and (max-width: 500px) {
   .service-title {
