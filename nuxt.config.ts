@@ -1,5 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { TRUE } from "sass";
 import vuetify from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({

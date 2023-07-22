@@ -15,14 +15,12 @@
 <script setup lang="ts">
 const el = ref(null);
 let scrollPer = ref(0);
-console.log(el);
 
 const handleScroll = () => {
   const scrollTop = el.value.scrollTop;
   const scrollHeight = el.value.scrollHeight;
   const clientHeight = el.value.clientHeight;
   scrollPer.value = (scrollTop / (scrollHeight - clientHeight)) * 100;
-  console.log("scrollper", scrollPer.value);
 };
 </script>
 
