@@ -43,9 +43,7 @@
             </v-sheet>
           </div>
 
-          <div class="service-title">
-            IDEA: Insights Driven Enterprise Assessment
-          </div>
+          <div class="service-title">Incorta</div>
         </v-container>
         <!-- section 1b -->
         <v-container fluid class="section1a">
@@ -60,7 +58,7 @@
               cols="12"
             >
               <div class="my-auto service-subtitle">
-                Build Your Analytics Roadmap
+                You Need the Right Master to Tame the [Data] Beast​
               </div>
             </v-col>
             <v-col
@@ -73,22 +71,24 @@
               style="position: relative"
             >
               <div class="my-auto service-description">
-                Transform your company with insights-driven and informed
-                decision makers. Using a balance of busines domain knowledge and
-                technology expertise.
+                Power Partners for a Modern Analytics Platform.
+                <br />
+                Incorta is a step in the right direction. Make sure you take
+                full advantage of its great analytics foundation.
               </div>
             </v-col>
           </v-row>
           <v-container class="fill-height d-block d-md-none my-auto">
             <v-row class="fill-height my-auto">
               <v-col cols="12" class="my-auto service-subtitle-small">
-                Build Your Analytics Roadmap
+                You Need the Right Master to Tame the [Data] Beast​
               </v-col>
 
               <v-col cols="12" class="my-auto service-description-small">
-                Transform your company with insights-driven and informed
-                decision makers. Using a balance of busines domain knowledge and
-                technology expertise.
+                Power Partners for a Modern Analytics Platform.
+                <br />
+                Incorta is a step in the right direction. Make sure you take
+                full advantage of its great analytics foundation.
               </v-col>
             </v-row>
           </v-container>
@@ -227,6 +227,17 @@
                             <span class="text-white" v-html="n"></span>
                           </li>
                         </ul>
+                        <br />
+                        <div>
+                          <v-btn
+                            color="primary"
+                            v-if="
+                              selectedService.title ==
+                              'Spend Control on Incorta'
+                            "
+                            >More about Spend Control</v-btn
+                          >
+                        </div>
                       </v-card-text>
                     </v-sheet>
                   </v-col>
@@ -244,73 +255,101 @@
 let value = ref(null);
 let items = [
   {
-    title: "Collaborative Thinking",
+    title: "Fast Incorta Requirements Evaluation",
     description:
-      "Our unique approach will bring business and IT together to present the right analytics roadmap and strategy.",
-    src: "/images/services/idea/collaborative-thinking.png",
+      "We call it FIRE. Our unique methodology addresses your specific Incorta POC requirements.",
+    src: "/images/services/incorta/requirement.png",
   },
   {
-    title: "Objective Domain Expertise",
+    title: "Power Partners",
     description:
-      "Analytics strategy is not a technology-only decision any longer. The need for deep business domain expertise is critical.",
+      "We are a power partner with Incorta, involved in applications and accelerators, a close working relationship with development and beta testing.",
+    src: "/images/services/incorta/power.png",
+  },
+  {
+    title: "Business Focus",
+    description:
+      "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
     src: "/images/services/idea/objective.png",
   },
   {
-    title: "Roadmap Development",
+    title: "Advanced Analytics",
     description:
-      "One of the key outputs of the IDEA engagement is a roadmap to help you derive key business insights.",
-    src: "/images/services/idea/roadmap-development.png",
+      "We know how to leverage the full capability of Incorta by using native Spark. Our accelerators do exactly that.",
+    src: "/images/services/incorta/analytics.png",
   },
   {
-    title: "Achieve Improved Results. Faster.",
+    title: "Ongoing Innovation",
     description:
-      "Our phased implementation plan allows you to achieve measurable results faster.",
-    src: "/images/services/idea/achieve-Faster.png",
+      "Thinking about support? Think a little differently. How do you innovate on a continuous basis? We do exactly that.",
+    src: "/images/services/incorta/ongoing.png",
   },
   {
-    title: "Advanced Analytics Expertise",
+    title: "As a Service",
     description:
-      "Advanced analytics is key for the future of all successful enterprises. We help you create a plan to achieve real, sustainable success.",
-    src: "/images/services/idea/advanced.png",
+      "Our “as a Service” consulting model works just like the cloud! Turn needed services on and off–easily. Our secret sauce can be your success mantra.",
+    src: "/images/services/incorta/as-service.png",
   },
 ];
 let serviceItems = [
   {
-    title: "Comprehensive and Meaningful",
-    src: "/images/services/idea/1.png",
+    title: "FIRE: Fast Incorta Requirements Evaluation",
+    src: "/images/services/incorta/1.png",
     subtitle:
-      "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
-    description: [],
-  },
-  {
-    title: "Deliverabless",
-    src: "/images/services/idea/2.png",
-    subtitle: "Our key deliverables include:",
+      "FIRE was created by Kenfront to help you quickly and thoroughly evaluate Incorta. Our unique evaluation methodology ensures that Incorta is the right fit by keeping both technology and business needs in mind. We developed evaluation methods based on our expertise in developing accelerators for Incorta and our broad project domain expertise.",
     description: [
-      "&#9675 Prioritized list of analytics goals",
-      "&#9675 Recommendations for technology and business readiness",
-      "&#9675 Detailed analytics architecture",
-      "&#9675 Phased implementation approach to achieve your goals",
+      "&#9675 Free Evaluation Program for Qualified Customers",
+      "&#9675 No Commitment Required",
+      "&#9675 Technology & Business Need Evaluation",
     ],
   },
   {
-    title: "Maturity Model and Roadmap",
-    src: "/images/services/idea/3.png",
+    title: "Incorta Implementation",
+    src: "/images/services/incorta/2.png",
     subtitle:
-      "As part of the final deliverable set, we include a detailed maturity model for your organization. <br /> You also receive a roadmap of projects and key steps to achieve the proper analytics maturity for deriving advanced insights and gaining business wisdom through a new enterprise analytics viewpoint.",
+      "We believe Incorta is the first platform that delivers on the long-promised capabilities of a modern analytics platforms. Projects can be delivered at a faster pace and often with less complexity. With Kenfront, you get a partner who doesn’t just configure the system and gets you to the first setp. We help you take advantage of full Incorta capabilities. ",
     description: [
-      "&#9675 <b>On-Demand</b> allows you to get started in data science without building and managing an expensive data science team.",
-      "&#9675 <b>Premier</b> has been structured for our clients with longer-term Data Science and AI projects and want our low cost, specialized assistance over a longer period",
-      "&#9675 Both offerings are cost effective and risk mitigating.",
+      "&#9675 Incorta Power Partner",
+      "&#9675 Experts in Advanced Analytics, Data Science, AI and Machine Learning",
+      "&#9675 Built Applications and Accelerators for Incorta",
+      "&#9675 Deep Domain Knowledge",
+    ],
+  },
+  {
+    title: "Spend Control on Incorta",
+    src: "/images/services/incorta/3.png",
+    subtitle:
+      "Spend Control is a powerful spend classification solution built by Kenfront and ported in Incorta. Spend Control works with any ERP system and uses deep learning and machine learning algorithms to discover hidden savings opportunities at a fraction of cost of traditional solutions.",
+    description: [
+      "&#9675 Native to Incorta",
+      "&#9675 AI-Based Spend Classification",
+      "&#9675 Built using Deep Learning and Machine Learning Algorithms",
+      "&#9675 Leverages native Spark of Incorta",
+    ],
+  },
+  {
+    title: "Ongoing Innovation",
+    src: "/images/services/incorta/4.png",
+    subtitle:
+      "How do you innovate on a continous basis?  This is where a lot of our thinking should go. It’s not just about meeting business needs by being reactive. You should be proactive by colloborating with business leadership by helping them with innovative and creative analytics ideas.  With Kenfront at your side, the possibilities are endless.",
+    description: [
+      "&#9675 Unique “as a service” consulting model",
+      "&#9675 No commitment–turn On and Off just like the cloud",
+      "&#9675 Architectural guidance",
+      "&#9675 Data Science, AI and ML experts, PLUS trained on Incorta",
     ],
   },
 ];
 let selectedService = ref({
-  title: "Comprehensive and Meaningful",
-  src: "/images/services/idea/1.png",
+  title: "FIRE: Fast Incorta Requirements Evaluation",
+  src: "/images/services/incorta/1.png",
   subtitle:
-    "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
-  description: [],
+    "FIRE was created by Kenfront to help you quickly and thoroughly evaluate Incorta. Our unique evaluation methodology ensures that Incorta is the right fit by keeping both technology and business needs in mind. We developed evaluation methods based on our expertise in developing accelerators for Incorta and our broad project domain expertise.",
+  description: [
+    "&#9675 Free Evaluation Program for Qualified Customers",
+    "&#9675 No Commitment Required",
+    "&#9675 Technology & Business Need Evaluation",
+  ],
 });
 
 let activeStep = ref(0);

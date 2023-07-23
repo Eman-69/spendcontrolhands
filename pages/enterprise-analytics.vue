@@ -43,9 +43,7 @@
             </v-sheet>
           </div>
 
-          <div class="service-title">
-            IDEA: Insights Driven Enterprise Assessment
-          </div>
+          <div class="service-title">Enterprise Analytics</div>
         </v-container>
         <!-- section 1b -->
         <v-container fluid class="section1a">
@@ -60,7 +58,7 @@
               cols="12"
             >
               <div class="my-auto service-subtitle">
-                Build Your Analytics Roadmap
+                Successful Projects Start with the Right Partners
               </div>
             </v-col>
             <v-col
@@ -73,22 +71,26 @@
               style="position: relative"
             >
               <div class="my-auto service-description">
-                Transform your company with insights-driven and informed
-                decision makers. Using a balance of busines domain knowledge and
-                technology expertise.
+                It’s not about small or large. What matters most is doing it
+                right.
+                <br />
+                We deliver the right methods for today’s analytics initiatives
+                to help you gain competitive advantage.
               </div>
             </v-col>
           </v-row>
           <v-container class="fill-height d-block d-md-none my-auto">
             <v-row class="fill-height my-auto">
               <v-col cols="12" class="my-auto service-subtitle-small">
-                Build Your Analytics Roadmap
+                It’s not about small or large. What matters most is doing it
+                right.
               </v-col>
 
               <v-col cols="12" class="my-auto service-description-small">
-                Transform your company with insights-driven and informed
-                decision makers. Using a balance of busines domain knowledge and
-                technology expertise.
+                Power Partners for a Modern Analytics Platform.
+                <br />
+                We deliver the right methods for today’s analytics initiatives
+                to help you gain competitive advantage.
               </v-col>
             </v-row>
           </v-container>
@@ -227,6 +229,17 @@
                             <span class="text-white" v-html="n"></span>
                           </li>
                         </ul>
+                        <br />
+                        <div>
+                          <v-btn
+                            color="primary"
+                            v-if="
+                              selectedService.title ==
+                              'Spend Control on Incorta'
+                            "
+                            >More about Spend Control</v-btn
+                          >
+                        </div>
                       </v-card-text>
                     </v-sheet>
                   </v-col>
@@ -244,72 +257,70 @@
 let value = ref(null);
 let items = [
   {
-    title: "Collaborative Thinking",
+    title: "Innovation at Our Core",
     description:
-      "Our unique approach will bring business and IT together to present the right analytics roadmap and strategy.",
-    src: "/images/services/idea/collaborative-thinking.png",
+      "Analytic initiatives are not just reports. Data wisdom from your analytics is about competitive advantage and innovation.",
+    src: "/images/services/incorta/ongoing.png",
   },
   {
-    title: "Objective Domain Expertise",
+    title: "Domain Expertise",
     description:
-      "Analytics strategy is not a technology-only decision any longer. The need for deep business domain expertise is critical.",
+      "Successful analytics results start with deep business domain knowledge augmented with modern technology.",
+    src: "/images/services/enterprise-analytics/man.png",
+  },
+  {
+    title: "Business Focus",
+    description:
+      "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
     src: "/images/services/idea/objective.png",
   },
   {
-    title: "Roadmap Development",
+    title: "Modern Architecture",
     description:
-      "One of the key outputs of the IDEA engagement is a roadmap to help you derive key business insights.",
-    src: "/images/services/idea/roadmap-development.png",
+      "With our unique mix of product development and consulting expertise we can help you utilize the right technologies.",
+    src: "/images/services/enterprise-analytics/modern.png",
   },
   {
-    title: "Achieve Improved Results. Faster.",
+    title: "Budget Conscious",
     description:
-      "Our phased implementation plan allows you to achieve measurable results faster.",
-    src: "/images/services/idea/achieve-Faster.png",
+      "We are nimble, focused, results-oriented, on time and on budget–no matter the project size.",
+    src: "/images/services/data-as-service/cost-effective.png",
   },
   {
-    title: "Advanced Analytics Expertise",
+    title: "Mitigate Risk",
     description:
-      "Advanced analytics is key for the future of all successful enterprises. We help you create a plan to achieve real, sustainable success.",
-    src: "/images/services/idea/advanced.png",
+      "Our unique engagement models, with the correct mix of right-shore resourcing, helps in mitigating risk upfront.",
+    src: "/images/services/enterprise-analytics/mitigate.png",
   },
 ];
 let serviceItems = [
   {
-    title: "Comprehensive and Meaningful",
-    src: "/images/services/idea/1.png",
+    title: "Transform Data Into Insights",
+    src: "/images/services/enterprise-analytics/1.png",
     subtitle:
-      "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
+      "We create significant value in the process of enabling your applied Analytics solutions. Waterfall or agile delivery can be considered based on how quickly you need to show meaningful results and ROI. Utilize our right-shore model to best match your budget and culture. Because we are objectives driven, our goal is always to make the project and our working relationship successful.",
     description: [],
   },
   {
-    title: "Deliverabless",
-    src: "/images/services/idea/2.png",
-    subtitle: "Our key deliverables include:",
-    description: [
-      "&#9675 Prioritized list of analytics goals",
-      "&#9675 Recommendations for technology and business readiness",
-      "&#9675 Detailed analytics architecture",
-      "&#9675 Phased implementation approach to achieve your goals",
-    ],
+    title: "Information Lifecycle Management",
+    src: "/images/services/enterprise-analytics/2.png",
+    subtitle:
+      "Our Managed Services (ILM) program for your data analytics environment is built on the foundation of value enablement and flexibility. Fill a gap, extend your existing team, or fully outsource the support of your analytics environment. We are sensitive to the culture and lineage of your organization and provide a model that maximizes value for the business and minimizes cost of ownership.",
+    description: [],
   },
   {
-    title: "Maturity Model and Roadmap",
-    src: "/images/services/idea/3.png",
+    title: "Point Solutions",
+    src: "/images/services/enterprise-analytics/3.png",
     subtitle:
-      "As part of the final deliverable set, we include a detailed maturity model for your organization. <br /> You also receive a roadmap of projects and key steps to achieve the proper analytics maturity for deriving advanced insights and gaining business wisdom through a new enterprise analytics viewpoint.",
-    description: [
-      "&#9675 <b>On-Demand</b> allows you to get started in data science without building and managing an expensive data science team.",
-      "&#9675 <b>Premier</b> has been structured for our clients with longer-term Data Science and AI projects and want our low cost, specialized assistance over a longer period",
-      "&#9675 Both offerings are cost effective and risk mitigating.",
-    ],
+      "With ever demanding business users, changing IT priorities, and shrinking budgets, building an analytics solution internally is not always the best way to go. Our point solutions, built on best of the breed technologies, using industry best practices, would help you get started at a rapid pace. These can be fully customizable and tailored to your needs.",
+    description: [],
   },
 ];
 let selectedService = ref({
-  title: "Comprehensive and Meaningful",
-  src: "/images/services/idea/1.png",
+  title: "Transform Data Into Insights",
+  src: "/images/services/incorta/1.png",
   subtitle:
-    "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
+    "We create significant value in the process of enabling your applied Analytics solutions. Waterfall or agile delivery can be considered based on how quickly you need to show meaningful results and ROI. Utilize our right-shore model to best match your budget and culture. Because we are objectives driven, our goal is always to make the project and our working relationship successful.",
   description: [],
 });
 
