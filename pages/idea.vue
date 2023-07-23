@@ -203,12 +203,18 @@
                 <v-row>
                   <v-col>
                     <v-sheet style="background: transparent">
-                      <v-card-title class="text-white">
-                        {{ selectedService.title }}
-                      </v-card-title>
-                      <v-card-subtitle class="text-white">
-                        {{ selectedService.subtitle }}
-                      </v-card-subtitle>
+                      <v-card-text class="text-white">
+                        <strong>
+                          <h2>
+                            {{ selectedService.title }}
+                          </h2>
+                        </strong>
+                      </v-card-text>
+                      <v-card-text
+                        class="text-white"
+                        v-html="selectedService.subtitle"
+                      >
+                      </v-card-text>
                       <v-card-text>
                         <ul style="list-style-type: circle; color: white">
                           <li
@@ -240,73 +246,60 @@
 let value = ref(null);
 let items = [
   {
-    title: "Scalable like Cloud",
+    title: "Collaborative Thinking",
     description:
-      "Just like your subscribe to cloud, subscribe to DSaaS. Turn it on and off depending on your needs.",
-    src: "/images/services/scalable-like-cloud.png",
+      "Our unique approach will bring business and IT together to present the right analytics roadmap and strategy.",
+    src: "/images/services/idea/collaborative-thinking.png",
   },
   {
-    title: "Cost Effective",
+    title: "Objective Domain Expertise",
     description:
-      "Predictable and upfront run-rate allows you to control the costs and manage your budgets.",
-    src: "/images/services/cost-effective.png",
+      "Analytics strategy is not a technology-only decision any longer. The need for deep business domain expertise is critical.",
+    src: "/images/services/idea/objective.png",
   },
   {
-    title: "Build with Open Tools",
+    title: "Roadmap Development",
     description:
-      "Do you have a toolset in mind? Let’s use it. If not we will work with you to establish an open toolset.",
-    src: "/images/services/open-tools.png",
+      "One of the key outputs of the IDEA engagement is a roadmap to help you derive key business insights.",
+    src: "/images/services/idea/roadmap-development.png",
   },
   {
-    title: "Tactical and Strategic",
+    title: "Achieve Improved Results. Faster.",
     description:
-      "Our unique model allows you to experiment with different AI models and be strategic at the same time.",
-    src: "/images/services/tactical.png",
+      "Our phased implementation plan allows you to achieve measurable results faster.",
+    src: "/images/services/idea/achieve-Faster.png",
   },
   {
-    title: "Configurable Models",
+    title: "Advanced Analytics Expertise",
     description:
-      "We will work with you to establish a model and run-rate that works for your needs and budgets.",
-    src: "/images/services/configure.png",
-  },
-  {
-    title: "Mitigate Risk",
-    description:
-      "Our pay-as-you-go approach allows you take complete control of your project and reduce risk.",
-    src: "/images/services/mitigate.png",
+      "Advanced analytics is key for the future of all successful enterprises. We help you create a plan to achieve real, sustainable success.",
+    src: "/images/services/idea/advanced.png",
   },
 ];
 let serviceItems = [
   {
-    title: "You Love the Cloud",
-    src: "/images/services/data-as-service/1.png",
+    title: "Comprehensive and Meaningful",
+    src: "/images/services/idea/1.png",
     subtitle:
-      "We do too. Our Data Science subscription model works just like your cloud services.",
+      "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
+    description: [],
+  },
+  {
+    title: "Deliverabless",
+    src: "/images/services/idea/2.png",
+    subtitle: "Our key deliverables include:",
     description: [
-      "&#9675 Just like the cloud, DSaaS is fully scalable",
-      "&#9675 Ramp up and down as needed",
-      "&#9675 Even turn it off",
-      "&#9675 Right experts for relevant tasks",
-      "&#9675 No wasted costs",
+      "&#9675 Prioritized list of analytics goals",
+      "&#9675 Recommendations for technology and business readiness",
+      "&#9675 Detailed analytics architecture",
+      "&#9675 Phased implementation approach to achieve your goals",
     ],
   },
   {
-    title: "Open Tools and Technologies",
-    src: "/images/services/data-as-service/2.png",
+    title: "Maturity Model and Roadmap",
+    src: "/images/services/idea/3.png",
     subtitle:
-      "We will work with you to establish the tools and technologies of your choice.",
-    description: [
-      "&#9675 Service built using widely available, open tools and technologies",
-      "&#9675 No proprietary handcuffs anywhere ",
-      "&#9675 Uses all major cloud services, depending on your corporate standards and  requirements",
-      "&#9675 Friendly, encouraging environment for our teams to easily collaborate",
-    ],
-  },
-  {
-    title: "Tailored to your needs",
-    src: "/images/services/data-as-service/3.png",
-    subtitle:
-      " Flexible and configurable usage models to meet your specific advanced analytics needs",
+      "As part of the final deliverable set, we include a detailed maturity model for your organization. <br /> You also receive a roadmap of projects and key steps to achieve the proper analytics maturity for deriving advanced insights and gaining business wisdom through a new enterprise analytics viewpoint.",
     description: [
       "&#9675 <b>On-Demand</b> allows you to get started in data science without building and managing an expensive data science team.",
       "&#9675 <b>Premier</b> has been structured for our clients with longer-term Data Science and AI projects and want our low cost, specialized assistance over a longer period",
@@ -315,18 +308,13 @@ let serviceItems = [
   },
 ];
 let selectedService = ref({
-  title: "You Love the Cloud",
-  src: "/images/services/data-as-service/1.png",
+  title: "Comprehensive and Meaningful",
+  src: "/images/services/idea/1.png",
   subtitle:
-    "We do too. Our Data Science subscription model works just like your cloud services.",
-  description: [
-    "&#9675 Just like the cloud, DSaaS is fully scalable",
-    "&#9675 Ramp up and down as needed",
-    "&#9675 Even turn it off",
-    "&#9675 Right experts for relevant tasks",
-    "&#9675 No wasted costs",
-  ],
+    "Through our unique assessment methodology, we help you think through comprehensive roadmaps and architectures that will result in successful data transformation efforts. Our approach puts business requirements first and helps you build the right analytical architecture to meet ever demanding data needs, in a phased manner.",
+  description: [],
 });
+
 let activeStep = ref(0);
 let setActiveStep = async (stepNumber) => {
   activeStep.value = stepNumber;
@@ -341,9 +329,9 @@ let setActiveStep = async (stepNumber) => {
   height: 100vh;
 }
 .section {
-  /* height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always; */
+  height: 100vh;
+  scroll-snap-align: unset;
+  /* scroll-snap-stop: always; */
 }
 .slider-font {
   font-size: x-large;

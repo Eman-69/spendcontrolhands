@@ -203,12 +203,18 @@
                 <v-row>
                   <v-col>
                     <v-sheet style="background: transparent">
-                      <v-card-title class="text-white">
-                        {{ selectedService.title }}
-                      </v-card-title>
-                      <v-card-subtitle class="text-white">
-                        {{ selectedService.subtitle }}
-                      </v-card-subtitle>
+                      <v-card-text class="text-white">
+                        <strong>
+                          <h2>
+                            {{ selectedService.title }}
+                          </h2>
+                        </strong>
+                      </v-card-text>
+                      <v-card-text
+                        class="text-white"
+                        v-html="selectedService.subtitle"
+                      >
+                      </v-card-text>
                       <v-card-text>
                         <ul style="list-style-type: circle; color: white">
                           <li
@@ -243,37 +249,37 @@ let items = [
     title: "Scalable like Cloud",
     description:
       "Just like your subscribe to cloud, subscribe to DSaaS. Turn it on and off depending on your needs.",
-    src: "/images/services/scalable-like-cloud.png",
+    src: "/images/services/data-as-service/scalable-like-cloud.png",
   },
   {
     title: "Cost Effective",
     description:
       "Predictable and upfront run-rate allows you to control the costs and manage your budgets.",
-    src: "/images/services/cost-effective.png",
+    src: "/images/services/data-as-service/cost-effective.png",
   },
   {
     title: "Build with Open Tools",
     description:
       "Do you have a toolset in mind? Let’s use it. If not we will work with you to establish an open toolset.",
-    src: "/images/services/open-tools.png",
+    src: "/images/services/data-as-service/open-tools.png",
   },
   {
     title: "Tactical and Strategic",
     description:
       "Our unique model allows you to experiment with different AI models and be strategic at the same time.",
-    src: "/images/services/tactical.png",
+    src: "/images/services/data-as-service/tactical.png",
   },
   {
     title: "Configurable Models",
     description:
       "We will work with you to establish a model and run-rate that works for your needs and budgets.",
-    src: "/images/services/configure.png",
+    src: "/images/services/data-as-service/configure.png",
   },
   {
     title: "Mitigate Risk",
     description:
       "Our pay-as-you-go approach allows you take complete control of your project and reduce risk.",
-    src: "/images/services/mitigate.png",
+    src: "/images/services/data-as-service/mitigate.png",
   },
 ];
 let serviceItems = [
@@ -336,13 +342,14 @@ let setActiveStep = async (stepNumber) => {
 
 <style scoped>
 .container {
+  scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100%;
+  height: 100vh;
 }
 .section {
-  /* height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always; */
+  height: 100vh;
+  scroll-snap-align: unset;
+  /* scroll-snap-stop: always; */
 }
 .slider-font {
   font-size: x-large;
