@@ -24,7 +24,7 @@ const handleScroll = () => {
 };
 </script>
 
-<style>
+<style scoped>
 .animation {
   position: absolute;
   height: 100vh;

@@ -120,7 +120,7 @@
     ></path>
   </svg>
 </template>
-<style>
+<style scoped>
 template {
   width: 100vw;
   height: 100vh;
@@ -198,10 +198,12 @@ template {
   .graphdot {
     top: 66vh !important;
   }
-  #ellipse {
-    display: none;
+   #ellipse{
+   top:-75vh; 
   }
 }
+
+
 </style>
 <script setup lang="ts">
 let props = defineProps({

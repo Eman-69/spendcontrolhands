@@ -1,8 +1,6 @@
 <template>
   <v-app class="background-main">
     <v-layout>
-      {{ loading }}
-
       <v-main>
         <div fluid class="header-margin-top">
           <slot />

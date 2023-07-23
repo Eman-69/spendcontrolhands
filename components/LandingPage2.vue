@@ -12,8 +12,14 @@
             <img class="rocket" id="rocket3" src="../images/rocket.png" alt="3">
             <img class="rocket" id="rocket4" src="../images/rocket.png" alt="4">
             <img class="rocket" id="rocket5" src="../images/rocket.png" alt="5">
-        </div>
-          <p class="page2-caption">Powerful Innovation</p>
+          </div>
+          <div class="fade">
+            <p class="page2-caption" id="p1">Powerful Innovation</p>
+            <p class="page2-caption" id="p2">Powerful Innovation</p>
+            <p class="page2-caption" id="p3">Powerful Innovation</p>
+            <p class="page2-caption" id="p4">Powerful Innovation</p>
+            <p class="page2-caption" id="p5">Powerful Innovation</p>
+          </div>
       </div>
     </section>
   </div> 
@@ -36,27 +42,27 @@ onMounted(()=>{
         loop:true,
     });
     rockettl.add({
-        targets:"#rocket1",
+        targets:"#rocket1,#p1",
         opacity:[0,1,0],
         easing:"linear",
     });
     rockettl.add({
-        targets:"#rocket2",
+        targets:"#rocket2,#p2",
         opacity:[0,1,0],
         easing:"linear",
     });
     rockettl.add({
-        targets:"#rocket3",
+        targets:"#rocket3,#p3",
         opacity:[0,1,0],
         easing:"linear",
     });
     rockettl.add({
-        targets:"#rocket4",
+        targets:"#rocket4,#p4",
         opacity:[0,1,0],
         easing:"linear",
     });
     rockettl.add({
-        targets:"#rocket5",
+        targets:"#rocket5,#p5",
         opacity:[0,1,0],
         easing:"linear",
     });
@@ -90,7 +96,7 @@ template{
     height: 15vh;
     opacity: 0;
 }
-.page2-img >p{
+.page2-img p{
   margin-top: 1vh;
   font-size: 1.8rem;
 }
@@ -99,11 +105,11 @@ template{
   justify-items: center;
   grid-template-columns: 1fr;
 }
-.fade > img{
+.fade > img,.fade > p{
   grid-row-start: 1;
   grid-column-start: 1;
+  opacity: 0;
 }
-
 @media only screen and (max-width:1599px) and (min-width:1366px)
 {
   .page2-caption{

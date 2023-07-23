@@ -30,15 +30,25 @@ template{
       margin-top:45vh ;
     }
   .downarrow{
-    height: 20vh;
+    height: 17vh;
   }
 }
 @media only screen and (max-width:800px)
   {
     .page1-texts{
-      margin:40vh 20vw 0vh 20vw ;
+      margin:35vh 20vw 0vh 20vw ;
       width:60vw;
     }
+}
+
+@media (orientation: portrait)
+{
+  .page1-texts{
+    height:70vh;
+  }
+  .downarrow{
+    margin-top:10vh;
+  }
 }
 </style>
 

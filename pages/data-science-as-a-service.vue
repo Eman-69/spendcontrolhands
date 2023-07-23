@@ -3,7 +3,7 @@
     <div class="nav"><Navbar /></div>
     <div class="container" ref="el">
       <!-- section 1 -->
-      <div class="section justify-center">
+      <div class="justify-center">
         <!-- section 1 a-->
         <v-container
           fluid
@@ -96,7 +96,7 @@
           </v-container>
         </v-container>
       </div>
-      <div class="section">
+      <div class="">
         <v-divider class="text-white"></v-divider>
         <!-- <div class="section-margin-top"></div> -->
         <v-container>
@@ -336,9 +336,8 @@ let setActiveStep = async (stepNumber) => {
 
 <style scoped>
 .container {
-  scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: 100vh;
+  height: 100%;
 }
 .section {
   /* height: 100vh;
