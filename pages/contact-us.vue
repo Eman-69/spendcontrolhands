@@ -26,15 +26,81 @@
               </v-tabs>
               <v-window v-model="tab">
                 <v-window-item value="1">
-                  <v-card class="pa-5" style="background: transparent">
+                  <v-sheet
+                    class="pa-5"
+                    style="position: relative; background: transparent"
+                  >
                     <v-img src="/images/map-hyd.png"></v-img>
-                  </v-card>
+                    <div
+                      class="text-center"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 90%;
+                        transform: translate(-50%, -50%);
+                      "
+                    >
+                      <div>
+                        <strong class="text-white">USA: </strong>
+                      </div>
+                      <small class="text-white"
+                        >4500 Westgrove Dr Addison TX 75001</small
+                      >
+                    </div>
+                  </v-sheet>
                 </v-window-item>
                 <v-window-item value="2">
-                  <v-img src="/images/map-hyd.png"></v-img>
+                  <v-sheet
+                    class="pa-5"
+                    style="position: relative; background: transparent"
+                  >
+                    <v-img src="/images/map-hyd.png"></v-img>
+                    <div
+                      class="text-center"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 90%;
+                        transform: translate(-50%, -50%);
+                      "
+                    >
+                      <div>
+                        <strong class="text-white"> Dubai: </strong>
+                      </div>
+                      <small class="text-white">
+                        Dubai Downtown Standard Chartered Building, Level 5 Opp.
+                        Emaar Square, Dubai, UAE
+                      </small>
+                    </div>
+                  </v-sheet>
                 </v-window-item>
                 <v-window-item value="3">
-                  <v-img src="/images/map-hyd.png"></v-img>
+                  <v-sheet
+                    class="pa-5"
+                    style="position: relative; background: transparent"
+                  >
+                    <v-img src="/images/map-hyd.png"></v-img>
+                    <div
+                      class="text-center"
+                      style="
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        width: 90%;
+                        transform: translate(-50%, -50%);
+                      "
+                    >
+                      <div>
+                        <strong class="text-white"> Hyderabad: </strong>
+                      </div>
+                      <small class="text-white"
+                        >B2 405 & 406 Manjeera Trinity Corporate Hyderabad
+                        500072</small
+                      >
+                    </div>
+                  </v-sheet>
                 </v-window-item>
               </v-window>
             </v-sheet>
@@ -148,6 +214,43 @@
               </v-row>
             </v-container>
           </div>
+          <v-container>
+            <h1>Address</h1>
+            <v-row class="justify-center">
+              <v-col>
+                <div>
+                  <strong class="text-white">USA: </strong>
+                </div>
+                <small class="text-white"
+                  >4500 Westgrove Dr Addison TX 75001</small
+                >
+              </v-col>
+              <v-col>
+                <div>
+                  <strong class="text-white"> Dubai: </strong>
+                </div>
+                <small class="text-white">
+                  Dubai Downtown Standard Chartered Building, Level 5 Opp. Emaar
+                  Square, Dubai, UAE
+                </small>
+              </v-col>
+              <v-col>
+                <div>
+                  <strong class="text-white"> Hyderabad: </strong>
+                </div>
+                <small class="text-white"
+                  >B2 405 & 406 Manjeera Trinity Corporate Hyderabad
+                  500072</small
+                >
+              </v-col>
+            </v-row>
+            <v-divider></v-divider>
+            <h1>Email</h1>
+
+            <v-row>
+              <p>info@kenfront.com</p>
+            </v-row>
+          </v-container>
         </div>
       </div>
     </div>
