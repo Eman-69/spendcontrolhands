@@ -1,7 +1,7 @@
 <template>
     <div class="page-container" v-if="!isloaded">
         <section class="cover">
-            <img src="../images/logoDark.png" alt="KenFront logo">
+            <img src="/images/logoDark.png" alt="KenFront logo">
         </section>
     </div>
 </template>

@@ -13,7 +13,7 @@
         opacity="1"
         cx="811.5"
         cy="811.5"
-        r="780"
+        r="740"
         stroke="#2684FE"
         stroke-width="5"
       />
@@ -22,7 +22,7 @@
         opacity="0.8"
         cx="811.5"
         cy="811.5"
-        r="790"
+        r="760"
         stroke="#2684FE"
         stroke-width="3"
       />
@@ -31,7 +31,7 @@
         opacity="0.5"
         cx="811.5"
         cy="811.5"
-        r="800"
+        r="780"
         stroke="#2E6BFE"
         stroke-width="3"
       />
@@ -40,14 +40,14 @@
         opacity="0.3"
         cx="811.5"
         cy="811.5"
-        r="810"
+        r="800"
         stroke="#248CFE"
         stroke-width="3"
       />
     </svg>
   </div>
   <div class="graph-container">
-    <img src="../images/page1/graphbg.png" alt="graph" class="graph" />
+    <img src="/images/page1/graphbg.png" alt="graph" class="graph" />
     <svg
       class="graphdot"
       width="199"
@@ -226,35 +226,35 @@ onMounted(() => {
   ellipsetl = $anime.timeline({
     autoplay: false,
     easing: "easeOutExpo",
-    duration: 5000,
+    duration: 10000,
   });
   graphtl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   graphdottl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   // questiondottl=$anime.timeline({
   //   autoplay: false,
-  //   duration: 5000,
+  //   duration: 10000,
   // });
   c1tl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   c2tl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   c3tl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   c4tl = $anime.timeline({
     autoplay: false,
-    duration: 5000,
+    duration: 10000,
   });
   ellipsetl.add({
     targets: "#ellipse",
@@ -288,29 +288,29 @@ onMounted(() => {
   // });
   c1tl.add({
     targets: "#c1",
-    r: [780, 780, 780, 780, 780],
+    r: [740, 780, 780, 780, 780],
     easing: "easeOutElastic",
   });
   c2tl.add({
     targets: "#c2",
-    r: [790, 900, 900, 900, 900],
+    r: [760, 900, 900, 900, 900],
     easing: "easeOutElastic",
   });
   c3tl.add({
     targets: "#c3",
-    r: [800, 1000, 1000, 1000, 1000],
+    r: [780, 1000, 1000, 1000, 1000],
     easing: "easeOutElastic",
   });
   c4tl.add({
     targets: "#c4",
-    r: [810, 1100, 1100, 1100, 1100],
+    r: [800, 1100, 1100, 1100, 1100],
     easing: "easeOutElastic",
   });
   //   ellipsetl.add({
   //     targets: ".graph",
   //     opacity:[0,0,1,0,0],
   //     easing: "easeOutQuad",
-  //     duration:5000,
+  //     duration:10000,
   //   });
 });
 

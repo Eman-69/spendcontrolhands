@@ -7,8 +7,8 @@
                 enable data science and machine learning? We<br>have the answer you need!</p>
             </div>
               <div class="page5-img">
-                <img src="../images/downloadcircle.svg" alt="" class="downloadrings">
-                <img class="downloadbtn" id="downloadbtn" src="../images/downloadbtn.svg" alt="">
+                <img src="/images/downloadcircle.svg" alt="" class="downloadrings">
+                <img class="downloadbtn" id="downloadbtn" src="/images/downloadbtn.svg" alt="">
             </div>     
         </section>
     </div>

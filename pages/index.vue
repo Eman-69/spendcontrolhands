@@ -34,6 +34,7 @@ const handleScroll = () => {
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
+  scroll-behavior: smooth;
   height: 100vh;
 }
 .container > div {

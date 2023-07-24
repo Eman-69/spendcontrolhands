@@ -2,7 +2,7 @@
   <div class="page-container">
     <section class="page1-texts">
       <h1 class="page1-title">Unleashing the Power of Analytics, AI & Data Science for Business Success</h1>
-      <div class="page1arrow"><img src="../images/download.png" alt="" class="downarrow" /></div>
+      <div class="page1arrow"><img src="/images/download.png" alt="" class="downarrow" /></div>
     </section>  
   </div>
 </template>

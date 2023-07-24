@@ -10,7 +10,7 @@
 
 <style>
 .about-us1{
-    background:url("images/black-bg-flipped.png"),url("images/aboutus1.png"),linear-gradient(
+    background:url("/images/black-bg-flipped.png"),url("/images/aboutus1.png"),linear-gradient(
     to bottom,
     #4129f4,
     #0f0f0f

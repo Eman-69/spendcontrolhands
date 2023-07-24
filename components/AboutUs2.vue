@@ -7,12 +7,12 @@
         </div>
         <v-container fluid class="my-16 pa-16">
             <v-row>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_1.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name" >Tom Oliver</v-card-title><v-card-text class="member-role">Founder</v-card-text></v-card></v-col>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_2.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">CTO</v-card-text></v-card></v-col>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_3.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Creative Head</v-card-text></v-card></v-col>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_4.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Marketing Head</v-card-text></v-card></v-col>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_5.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Designer</v-card-text></v-card></v-col>
-                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="images/member_6.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Developer</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_1.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name" >Tom Oliver</v-card-title><v-card-text class="member-role">Founder</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_2.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">CTO</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_3.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Creative Head</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_4.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Marketing Head</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_5.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Designer</v-card-text></v-card></v-col>
+                <v-col cols="12" md="4" sm="6" xs="12" ><v-card class="bg-black mb-16" ><v-img src="/images/member_6.png" width="75%" style="margin: 0 auto;"></v-img><v-card-title class="member-name">Tom Oliver</v-card-title><v-card-text  class="member-role">Developer</v-card-text></v-card></v-col>
             </v-row>
         </v-container>
     </section>
@@ -63,5 +63,17 @@ h4{
     font-family: 'Nexa', sans-serif;
      text-align: center  !important;
      color:#DBDFEA ;
+}
+@media only screen and (max-width:400px) and (min-width:251px)
+{
+   .v-card-title.member-name {
+    font-size: 1rem;
+}
+}
+@media only screen and (max-width:250px)
+{
+   .v-card-title.member-name {
+    font-size: 0.5rem;
+}
 }
 </style>

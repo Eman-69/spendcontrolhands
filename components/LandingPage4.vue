@@ -11,8 +11,8 @@
                     budgets.</p>
             </div>
                 <div class="page4-image">
-                    <img src="../images/question.png" alt="" class="question">
-                    <img src="../images/question-dot.png" alt="" class="question-dot">
+                    <img src="/images/question.png" alt="" class="question">
+                    <img src="/images/question-dot.png" alt="" class="question-dot">
                 </div>              
         </section>
     </div>
