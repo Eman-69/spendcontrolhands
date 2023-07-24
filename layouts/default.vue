@@ -18,36 +18,40 @@
 
         <v-divider></v-divider>
 
-        <v-list density="compact" nav>
+        <v-list density="comfortable" nav>
+          <NuxtLink class="text-decoration-none text-white" to="/">
           <v-list-item
             prepend-icon="mdi-view-dashboard"
             title="Home"
-            value="home"
-          ></v-list-item>
+            value="to"
+          ></v-list-item></NuxtLink>
           <v-list-group value="Services" prepend-icon="mdi-toolbox-outline">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Services"></v-list-item>
           </template>
-
-          <v-list-item
-            v-for="([title, icon, to], i) in services"
+          <NuxtLink class="text-decoration-none text-white"             
+            v-for="([title, icon,to], i) in services"
             :key="i"
-            :prepend-icon="icon"
-            :value="to"
-          ><p>{{title}}</p></v-list-item>
+            :to="to"
+            :title="title"
+            :icon="icon"
+            >
+          <v-list-item prepend-icon="mdi-cog-outline">
+          {{ title }}</v-list-item></NuxtLink>
         </v-list-group>
         <v-list-group value="Products" prepend-icon="mdi-package-variant">
           <template v-slot:activator="{ props }">
             <v-list-item v-bind="props" title="Products"></v-list-item>
           </template>
-
-          <v-list-item
+          <NuxtLink class="text-decoration-none text-white"             
             v-for="([title, icon,to], i) in products"
             :key="i"
-            :value="to"
+            :to="to"
             :title="title"
-            :prepend-icon="icon"
-          ></v-list-item>
+            :icon="icon"
+            >
+          <v-list-item prepend-icon="mdi-cog-outline">
+          {{ title }}</v-list-item></NuxtLink>
         </v-list-group>
           <v-list-item
             prepend-icon="mdi-forum"
@@ -66,6 +70,7 @@
 </template>
 
 <style scoped>
+
 .background-main {
   background: /*url("../img/page1dots.png"), */ linear-gradient(
     to bottom,
