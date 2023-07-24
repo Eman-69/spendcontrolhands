@@ -7,7 +7,7 @@
       <!-- <i class='bx bx-menu sidebarOpen' ></i> -->
 
       <v-app-bar-nav-icon
-        class="d-md-none d-md-none text-white"
+        class="d-md-none d-block text-white"
         variant="text"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
