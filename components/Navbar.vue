@@ -7,7 +7,7 @@
       <!-- <i class='bx bx-menu sidebarOpen' ></i> -->
 
       <v-app-bar-nav-icon
-        class="siderbarOpen text-white"
+        class="d-md-none d-md-none text-white"
         variant="text"
         @click.stop="drawer = !drawer"
       ></v-app-bar-nav-icon>
@@ -24,19 +24,26 @@
             <v-menu open-on-hover>
               <template v-slot:activator="{ props }">
                 <v-btn
+                  variant="text"
+                  rounded
                   class="services text-white"
-                  color="rgba(0,0,0,0)"
                   v-bind="props"
                   >Services&nbsp;&nbsp;<i class="fa fa-thin fa-chevron-down"></i
                 ></v-btn>
               </template>
 
               <v-list>
-                <v-list-item
-                  v-for="(item, index) in items[0].value"
-                  :key="index"
-                >
-                  <v-list-item-title>{{ item.service }}</v-list-item-title>
+                <v-list-item v-for="(item, index) in services" :key="index">
+                  <NuxtLink
+                    style="
+                      cursor: pointer;
+                      text-decoration: none;
+                      color: rgb(71, 70, 70);
+                    "
+                    :to="item.to"
+                  >
+                    <v-list-item-title>{{ item.service }}</v-list-item-title>
+                  </NuxtLink>
                 </v-list-item>
               </v-list>
             </v-menu>
@@ -45,19 +52,26 @@
             <v-menu open-on-hover>
               <template v-slot:activator="{ props }">
                 <v-btn
+                  variant="text"
+                  rounded
                   class="products text-white"
-                  color="rgba(0,0,0,0)"
                   v-bind="props"
                   >Products&nbsp;&nbsp;<i class="fa fa-thin fa-chevron-down"></i
                 ></v-btn>
               </template>
 
               <v-list>
-                <v-list-item
-                  v-for="(item, index) in items[1].value"
-                  :key="index"
-                >
-                  <v-list-item-title>{{ item.product }}</v-list-item-title>
+                <v-list-item v-for="(item, index) in products" :key="index">
+                  <NuxtLink
+                    style="
+                      cursor: pointer;
+                      text-decoration: none;
+                      color: rgb(71, 70, 70);
+                    "
+                    :to="item.to"
+                  >
+                    <v-list-item-title>{{ item.product }}</v-list-item-title>
+                  </NuxtLink>
                 </v-list-item>
               </v-list>
             </v-menu>
@@ -66,12 +80,13 @@
             <v-btn
               to="/about_us"
               class="about-us text-white"
-              color="rgba(0,0,0,0)"
+              variant="text"
+              rounded
               >About Us</v-btn
             >
           </li>
           <li>
-            <v-btn class="contact-us text-white" color="rgba(0,0,0,0)"
+            <v-btn variant="outlined" rounded class="contact-us text-white"
               >Contact Us</v-btn
             >
           </li>
@@ -86,19 +101,31 @@ export default {
   data: () => ({
     drawer: false,
     group: null,
+    services: [
+      {
+        service: "Data Science as a Service",
+        to: "/data-science-as-a-service",
+      },
+      { service: "IDEA", to: "/idea" },
+      { service: "Incorta", to: "/incorta" },
+      { service: "Enterprises Analytics", to: "/enterprise-analytics" },
+    ],
+    products: [
+      {
+        product: "Carrom Live",
+        to: "/",
+      },
+      {
+        product: "Spend Control",
+        to: "/",
+      },
+    ],
     items: [
       {
         title: "Services",
-        value: [
-          { service: "Data Science as a Service" },
-          { service: "IDEA" },
-          { service: "Incorta" },
-          { service: "Enterprises Analytics" },
-        ],
       },
       {
         title: "Products",
-        value: [{ product: "Carrom Live" }, { product: "Spend Control" }],
       },
       {
         title: "About Us",
@@ -138,7 +165,10 @@ nav {
   top: 0;
   left: 0;
   border-radius: 10vw;
-  background-color: rgba(16, 16, 16, 0.802);
+  background: #0f0f0f4a;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   height: 10%;
   margin: 2% 3%;
   width: 94%;

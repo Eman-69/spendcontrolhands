@@ -196,7 +196,7 @@
                       </v-col>
                     </v-row>
                   </v-container>
-                  <v-contain>
+                  <v-container>
                     <v-row>
                       <v-col class="text-center">
                         <v-btn
@@ -209,7 +209,7 @@
                         </v-btn>
                       </v-col>
                     </v-row>
-                  </v-contain>
+                  </v-container>
                 </v-col>
               </v-row>
             </v-container>
