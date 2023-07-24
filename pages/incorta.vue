@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black">
-    <div class="nav"><Navbar /></div>
+    <!-- <div class="nav"><Navbar /></div> -->
     <div class="container" ref="el">
       <!-- section 1 -->
       <div class="section justify-center">

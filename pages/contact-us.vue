@@ -10,7 +10,6 @@
 
       <div class="justify-center">
         <div>
-          <div class="nav"><Navbar /></div>
           <v-container>
             <v-sheet style="background: transparent">
               <v-tabs

@@ -1,7 +1,7 @@
 <template>
   <div class="main-background">
     <div class="animation"><Animation :scrollPer="scrollPer" /></div>
-    <div class="nav"><Navbar /></div>
+    <!-- <div class="nav"><Navbar /></div> -->
     <div class="container" ref="el" @scroll="handleScroll()">
       <div id="id1"><LandingPage1 /></div>
       <div id="id2"><LandingPage2 /></div>

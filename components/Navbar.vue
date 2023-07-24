@@ -1,163 +1,154 @@
 <template>
-  <nav>
-    <div class="nav-bar">
-      <span class="logo navLogo"
-        ><a><img src="/images/logoLight.png" alt="KenFront logo" /></a
-      ></span>
-      <!-- <i class='bx bx-menu sidebarOpen' ></i> -->
+  <div>
+    <nav>
+      <div class="nav-bar">
+        <span class="logo navLogo"
+          ><Nuxt-Link to="/"
+            ><img src="/images/logoLight.png" alt="KenFront logo" /></Nuxt-Link
+        ></span>
+        <!-- <i class='bx bx-menu sidebarOpen' ></i> -->
 
-      <v-app-bar-nav-icon
-        class="d-md-none d-block text-white"
-        variant="text"
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
-      <div class="menu">
-        <div class="logo-toggle">
-          <span class="logo"
-            ><a><img src="/images/logoLight.png" alt="KenFront logo" /></a
-          ></span>
-          <!-- <i class='bx bx-x siderbarClose'></i>  -->
+        <v-app-bar-nav-icon
+          class="d-md-none d-block text-white"
+          variant="text"
+          @click.stop="openDrawer"
+        ></v-app-bar-nav-icon>
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"
+              ><a><img src="/images/logoLight.png" alt="KenFront logo" /></a
+            ></span>
+            <!-- <i class='bx bx-x siderbarClose'></i>  -->
+          </div>
+
+          <ul class="nav-links">
+            <li>
+              <v-menu open-on-focus open-on-hover open-on-click>
+                <template v-slot:activator="{ props }">
+                  <v-btn
+                    variant="text"
+                    rounded
+                    class="services text-white"
+                    v-bind="props"
+                    >Services&nbsp;&nbsp;<i
+                      class="fa fa-thin fa-chevron-down"
+                    ></i
+                  ></v-btn>
+                </template>
+
+                <v-list>
+                  <v-list-item v-for="(item, index) in services" :key="index">
+                    <NuxtLink
+                      style="
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: rgb(71, 70, 70);
+                      "
+                      :to="item.to"
+                    >
+                      <v-list-item-title>{{ item.service }}</v-list-item-title>
+                    </NuxtLink>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </li>
+            <li>
+              <v-menu open-on-focus open-on-hover open-on-click>
+                <template v-slot:activator="{ props }">
+                  <v-btn
+                    variant="text"
+                    rounded
+                    class="products text-white"
+                    v-bind="props"
+                    >Products&nbsp;&nbsp;<i
+                      class="fa fa-thin fa-chevron-down"
+                    ></i
+                  ></v-btn>
+                </template>
+
+                <v-list>
+                  <v-list-item v-for="(item, index) in products" :key="index">
+                    <NuxtLink
+                      style="
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: rgb(71, 70, 70);
+                      "
+                      :to="item.to"
+                    >
+                      <v-list-item-title>{{ item.product }}</v-list-item-title>
+                    </NuxtLink>
+                  </v-list-item>
+                </v-list>
+              </v-menu>
+            </li>
+            <li>
+              <v-btn
+                to="/about-us"
+                class="about-us text-white"
+                variant="text"
+                rounded
+                >About Us</v-btn
+              >
+            </li>
+            <li>
+              <v-btn
+                variant="outlined"
+                rounded
+                class="contact-us text-white"
+                to="/contact-us"
+                >Contact Us</v-btn
+              >
+            </li>
+          </ul>
         </div>
-
-        <ul class="nav-links">
-          <li>
-            <v-menu open-on-hover>
-              <template v-slot:activator="{ props }">
-                <v-btn
-                  variant="text"
-                  rounded
-                  class="services text-white"
-                  v-bind="props"
-                  >Services&nbsp;&nbsp;<i class="fa fa-thin fa-chevron-down"></i
-                ></v-btn>
-              </template>
-
-              <v-list>
-                <v-list-item v-for="(item, index) in services" :key="index">
-                  <NuxtLink
-                    style="
-                      cursor: pointer;
-                      text-decoration: none;
-                      color: rgb(71, 70, 70);
-                    "
-                    :to="item.to"
-                  >
-                    <v-list-item-title>{{ item.service }}</v-list-item-title>
-                  </NuxtLink>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </li>
-          <li>
-            <v-menu open-on-hover>
-              <template v-slot:activator="{ props }">
-                <v-btn
-                  variant="text"
-                  rounded
-                  class="products text-white"
-                  v-bind="props"
-                  >Products&nbsp;&nbsp;<i class="fa fa-thin fa-chevron-down"></i
-                ></v-btn>
-              </template>
-
-              <v-list>
-                <v-list-item v-for="(item, index) in products" :key="index">
-                  <NuxtLink
-                    style="
-                      cursor: pointer;
-                      text-decoration: none;
-                      color: rgb(71, 70, 70);
-                    "
-                    :to="item.to"
-                  >
-                    <v-list-item-title>{{ item.product }}</v-list-item-title>
-                  </NuxtLink>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </li>
-          <li>
-            <v-btn
-              to="/about_us"
-              class="about-us text-white"
-              variant="text"
-              rounded
-              >About Us</v-btn
-            >
-          </li>
-          <li>
-            <v-btn variant="outlined" rounded class="contact-us text-white"
-              >Contact Us</v-btn
-            >
-          </li>
-        </ul>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
 
-<script>
-export default {
-  data: () => ({
-    drawer: false,
-    group: null,
-    services: [
-      {
-        service: "Data Science as a Service",
-        to: "/data-science-as-a-service",
-      },
-      { service: "IDEA", to: "/idea" },
-      { service: "Incorta", to: "/incorta" },
-      { service: "Enterprises Analytics", to: "/enterprise-analytics" },
-    ],
-    products: [
-      {
-        product: "Carrom Live",
-        to: "/",
-      },
-      {
-        product: "Spend Control",
-        to: "/",
-      },
-    ],
-    items: [
-      {
-        title: "Services",
-      },
-      {
-        title: "Products",
-      },
-      {
-        title: "About Us",
-      },
-      {
-        title: "Contact Us",
-      },
-    ],
-  }),
-  watch: {
-    group() {
-      this.drawer = false;
-    },
+<script setup>
+let drawer = ref(false);
+let group = ref(null);
+let services = ref([
+  {
+    service: "Data Science as a Service",
+    to: "/data-science-as-a-service",
   },
+  { service: "IDEA", to: "/idea" },
+  { service: "Incorta", to: "/incorta" },
+  { service: "Enterprises Analytics", to: "/enterprise-analytics" },
+]);
+let products = ref([
+  {
+    product: "Carrom Live",
+    to: "/",
+  },
+  {
+    product: "Spend Control",
+    to: "/",
+  },
+]);
+let items = ref([
+  {
+    title: "Services",
+  },
+  {
+    title: "Products",
+  },
+  {
+    title: "About Us",
+  },
+  {
+    title: "Contact Us",
+  },
+]);
+const emit = defineEmits(["customEvent"]);
+
+let openDrawer = async () => {
+  drawer.value = true;
+  emit("customEvent", drawer.value);
 };
-
-// const body = document.querySelector("template"),
-//       nav = document.querySelector("nav"),
-//       sidebarOpen = document.querySelector(".sidebarOpen");
-
-// //   js code to toggle sidebar
-// sidebarOpen.addEventListener("click" , () =>{
-//     nav.classList.add("active");
-// });
-
-// body.addEventListener("click" , e =>{
-//     let clickedElm = e.target;
-
-//     if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
-//         nav.classList.remove("active");
-//     }
-// });
 </script>
 <style scoped>
 nav {

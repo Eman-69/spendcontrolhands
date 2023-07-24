@@ -4,7 +4,7 @@ import vuetify from "vite-plugin-vuetify";
 export default defineNuxtConfig({
   app: {
     head: {
-      title: "My Awesome App",
+      title: "Kenfront",
       htmlAttrs: {
         lang: "en",
       },

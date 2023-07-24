@@ -1,6 +1,5 @@
 <template>
   <div class="main-background">
-    <div class="nav"><Navbar /></div>
     <div class="container2">
       <div><AboutUs1 /></div>
       <div><AboutUs2 /></div>
