@@ -56,27 +56,27 @@ onMounted(() => {
   });
   rockettl.add({
     targets: "#rocket1",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   rockettl.add({
     targets: "#rocket2",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   rockettl.add({
     targets: "#rocket3",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   rockettl.add({
     targets: "#rocket4",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   rockettl.add({
     targets: "#rocket5",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   captiontl = $anime.timeline({
@@ -86,27 +86,27 @@ onMounted(() => {
   });
   captiontl.add({
     targets: "#caption1",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   captiontl.add({
     targets: "#caption2",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   captiontl.add({
     targets: "#caption3",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   captiontl.add({
     targets: "#caption4",
-    opacity: [0, 1, 1, 1, 1, 0],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
   captiontl.add({
     targets: "#caption5",
-    opacity: [0, 1],
+    opacity: [0, 1, 0],
     easing: "linear",
   });
 });
