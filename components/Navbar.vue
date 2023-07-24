@@ -194,7 +194,7 @@ nav .nav-bar .logo v-btn {
 }
 .logo img {
   height: 6vh;
-  padding-top: 5%;
+  padding-top: 8%;
 }
 
 .menu .logo-toggle {

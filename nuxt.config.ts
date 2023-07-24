@@ -39,6 +39,8 @@ export default defineNuxtConfig({
       ],
     },
   },
+  ssr: false,
+  spaLoadingTemplate: "defaultLoading/spa-loading-template.html",
   css: [
     "@/assets/css/style.css",
     "vuetify/lib/styles/main.sass",

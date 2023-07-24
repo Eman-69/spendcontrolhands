@@ -143,7 +143,7 @@ template {
   grid-column-start: 1;
   animation-name: svganime;
   animation-timing-function: ease-in-out;
-  animation-duration: 3s;
+  animation-duration: 6s;
   animation-iteration-count: infinite;
 }
 @keyframes svganime {
@@ -151,7 +151,7 @@ template {
     transform: translateY(0%);
   }
   50% {
-    transform: translateY(2%);
+    transform: translateY(1%);
   }
   100% {
     transform: translateY(0%);
@@ -198,12 +198,10 @@ template {
   .graphdot {
     top: 66vh !important;
   }
-   #ellipse{
-   top:-75vh; 
+  #ellipse {
+    top: -75vh;
   }
 }
-
-
 </style>
 <script setup lang="ts">
 let props = defineProps({
