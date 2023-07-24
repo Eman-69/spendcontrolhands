@@ -20,8 +20,6 @@ export default defineNuxtConfig({
         { src: "https://kit.fontawesome.com/1c9ad4b785.js" },
       ],
       link: [
-        { rel: "stylesheet", href: "https://fonts.cdnfonts.com/css/nexa-bold" },
-
         // ===== Boxicons CSS =====
         {
           href: "https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css",
