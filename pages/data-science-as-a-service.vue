@@ -80,7 +80,7 @@
             </v-col>
           </v-row>
           <v-container class="fill-height d-block d-md-none my-auto">
-            <v-row class="fill-height my-auto">
+            <v-row class="my-auto">
               <v-col cols="12" class="my-auto service-subtitle-small">
                 Industry’s First “as a Service” Consulting Model
               </v-col>
@@ -363,9 +363,9 @@ let setActiveStep = async (stepNumber) => {
 }
 .service-title {
   position: absolute;
-  transform: translate(-40%, -50%);
-  top: 50%;
-  left: 20%;
+  transform: translate(-30%, -50%);
+  top: 60%;
+  left: 30%;
   font-weight: 700;
   font-size: 50px;
 }
@@ -431,7 +431,7 @@ let setActiveStep = async (stepNumber) => {
   }
   .service-title {
     font-size: 50px;
-    left: 25%;
+    left: 35%;
   }
   .service-subtitle {
     font-size: 46px;
