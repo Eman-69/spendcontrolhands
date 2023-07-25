@@ -260,37 +260,37 @@ let items = [
     title: "Innovation at Our Core",
     description:
       "Analytic initiatives are not just reports. Data wisdom from your analytics is about competitive advantage and innovation.",
-    src: "/images/services/incorta/ongoing.png",
+    src: "/images/services/incorta/a.png",
   },
   {
     title: "Domain Expertise",
     description:
       "Successful analytics results start with deep business domain knowledge augmented with modern technology.",
-    src: "/images/services/enterprise-analytics/man.png",
+    src: "/images/services/enterprise-analytics/b.png",
   },
   {
     title: "Business Focus",
     description:
       "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
-    src: "/images/services/idea/objective.png",
+    src: "/images/services/idea/c.png",
   },
   {
     title: "Modern Architecture",
     description:
       "With our unique mix of product development and consulting expertise we can help you utilize the right technologies.",
-    src: "/images/services/enterprise-analytics/modern.png",
+    src: "/images/services/enterprise-analytics/d.png",
   },
   {
     title: "Budget Conscious",
     description:
       "We are nimble, focused, results-oriented, on time and on budget–no matter the project size.",
-    src: "/images/services/data-as-service/cost-effective.png",
+    src: "/images/services/enterprise-analytics/e.png",
   },
   {
     title: "Mitigate Risk",
     description:
       "Our unique engagement models, with the correct mix of right-shore resourcing, helps in mitigating risk upfront.",
-    src: "/images/services/enterprise-analytics/mitigate.png",
+    src: "/images/services/enterprise-analytics/f.png",
   },
 ];
 let serviceItems = [

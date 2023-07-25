@@ -248,31 +248,31 @@ let items = [
     title: "Collaborative Thinking",
     description:
       "Our unique approach will bring business and IT together to present the right analytics roadmap and strategy.",
-    src: "/images/services/idea/collaborative-thinking.png",
+    src: "/images/services/idea/a.png",
   },
   {
     title: "Objective Domain Expertise",
     description:
       "Analytics strategy is not a technology-only decision any longer. The need for deep business domain expertise is critical.",
-    src: "/images/services/idea/objective.png",
+    src: "/images/services/idea/b.png",
   },
   {
     title: "Roadmap Development",
     description:
       "One of the key outputs of the IDEA engagement is a roadmap to help you derive key business insights.",
-    src: "/images/services/idea/roadmap-development.png",
+    src: "/images/services/idea/c.png",
   },
   {
     title: "Achieve Improved Results. Faster.",
     description:
       "Our phased implementation plan allows you to achieve measurable results faster.",
-    src: "/images/services/idea/achieve-Faster.png",
+    src: "/images/services/idea/d.png",
   },
   {
     title: "Advanced Analytics Expertise",
     description:
       "Advanced analytics is key for the future of all successful enterprises. We help you create a plan to achieve real, sustainable success.",
-    src: "/images/services/idea/advanced.png",
+    src: "/images/services/idea/e.png",
   },
 ];
 let serviceItems = [

@@ -258,37 +258,37 @@ let items = [
     title: "Fast Incorta Requirements Evaluation",
     description:
       "We call it FIRE. Our unique methodology addresses your specific Incorta POC requirements.",
-    src: "/images/services/incorta/requirement.png",
+    src: "/images/services/incorta/a.png",
   },
   {
     title: "Power Partners",
     description:
       "We are a power partner with Incorta, involved in applications and accelerators, a close working relationship with development and beta testing.",
-    src: "/images/services/incorta/power.png",
+    src: "/images/services/incorta/b.png",
   },
   {
     title: "Business Focus",
     description:
       "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
-    src: "/images/services/idea/objective.png",
+    src: "/images/services/idea/c.png",
   },
   {
     title: "Advanced Analytics",
     description:
       "We know how to leverage the full capability of Incorta by using native Spark. Our accelerators do exactly that.",
-    src: "/images/services/incorta/analytics.png",
+    src: "/images/services/incorta/d.png",
   },
   {
     title: "Ongoing Innovation",
     description:
       "Thinking about support? Think a little differently. How do you innovate on a continuous basis? We do exactly that.",
-    src: "/images/services/incorta/ongoing.png",
+    src: "/images/services/incorta/e.png",
   },
   {
     title: "As a Service",
     description:
       "Our “as a Service” consulting model works just like the cloud! Turn needed services on and off–easily. Our secret sauce can be your success mantra.",
-    src: "/images/services/incorta/as-service.png",
+    src: "/images/services/incorta/f.png",
   },
 ];
 let serviceItems = [
