@@ -158,6 +158,7 @@
                 <v-row class="justify-center">
                   <v-col class="my-auto" lg="7" md="9" sm="8" cols="12">
                     <div
+                    style="cursor: pointer;"
                       class="slider-container"
                       v-for="(each, j) in serviceItems"
                       :key="j"
@@ -212,15 +213,18 @@
                       <v-card-text
                         class="text-white"
                         v-html="selectedService.subtitle"
+                        style=" font-weight: 300;"
                       >
                       </v-card-text>
                       <v-card-text>
-                        <ul style="list-style-type: circle; color: white">
+                        <ul style="list-style-type: circle;">
                           <li
                             style="
                               font-size: 14px;
                               margin-left: 10px;
                               list-style-type: circle;
+                              font-weight: 300;
+                                color: #DBDFEA;
                             "
                             v-for="(n, k) in selectedService.description"
                             :key="k"
@@ -376,6 +380,7 @@ let setActiveStep = async (stepNumber) => {
   font-weight: 300;
   font-size: 17px;
   line-height: 1.2;
+   color: #DBDFEA;;
 }
 .service-subtitle {
   font-size: 46px;
@@ -384,6 +389,7 @@ let setActiveStep = async (stepNumber) => {
   transform: translate(-50%, -50%);
   top: 40%;
   width: 80%;
+  font-weight: 500;
 }
 .service-description {
   font-size: 22px;
@@ -392,6 +398,7 @@ let setActiveStep = async (stepNumber) => {
   transform: translate(-50%, -50%);
   top: 40%;
   width: 80%;
+    color: #DBDFEA;
 }
 .ellipse-main {
   position: absolute;

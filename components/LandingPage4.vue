@@ -125,6 +125,7 @@ template {
 @media only screen and (max-width:799px) and (min-width:300px) {
     .page4-texts {
         text-align: center;
+        height: 50vh;
     }
 
     .page4 {
@@ -140,7 +141,7 @@ template {
 
     .question-dot {
         margin-top: -120px;
-        margin-left: -5px;
+        margin-left: -1px;
     }
 }
 
