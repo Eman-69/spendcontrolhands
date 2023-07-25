@@ -170,8 +170,8 @@ template {
 .graphdot {
   height: 22vh;
   position: absolute;
-  right: 140px;
-  top: 33vh;
+  right: 145px;
+  top: 34.5vh;
   z-index: -1;
   opacity: 0;
 }
@@ -274,8 +274,8 @@ onMounted(() => {
   graphdottl.add({
     targets: ".graphdot",
     opacity: [0, 0, 2, -2, -2],
-    top: ["33vh", "33vh", "33vh", "73vh", "73vh"],
-    right: ["140px", "140px", "140px", "100px", "100px"],
+    top: ["34.5vh", "34.5vh", "34.5vh", "73vh", "73vh"],
+    right: ["145px", "145px", "145px", "100px", "100px"],
     easing: "linear",
   });
   // questiondottl.add({

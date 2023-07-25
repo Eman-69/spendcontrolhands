@@ -53,16 +53,20 @@
           <v-list-item prepend-icon="mdi-cog-outline">
           {{ title }}</v-list-item></NuxtLink>
         </v-list-group>
+        <NuxtLink to="/about-us" class="text-decoration-none text-white">
           <v-list-item
             prepend-icon="mdi-forum"
             title="About Us"
             value="about_us"
           ></v-list-item>
+        </NuxtLink>
+        <NuxtLink to="/contact-us" class="text-decoration-none text-white">
           <v-list-item
             prepend-icon="mdi-email-outline"
             title="Contact Us"
             value="contact_us"
           ></v-list-item>
+        </NuxtLink>
         </v-list>
       </v-navigation-drawer>
     </v-layout>
