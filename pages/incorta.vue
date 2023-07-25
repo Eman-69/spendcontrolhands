@@ -127,11 +127,7 @@
               <v-row class="d-flex d-md-none justify-center text-center">
                 <v-col xl="3" lg="4" md="4" sm="6" cols="5" class="py-0">
                   <v-sheet style="background: transparent" class="pa-3">
-                    <v-img
-                      :aspect-ratio="1 / 1"
-                      :src="each.src"
-                    >
-                    </v-img>
+                    <v-img :aspect-ratio="1 / 1" :src="each.src"> </v-img>
                   </v-sheet>
                 </v-col>
 
@@ -160,7 +156,7 @@
                       class="slider-container"
                       v-for="(each, j) in serviceItems"
                       :key="j"
-                      style="cursor:pointer"
+                      style="cursor: pointer"
                     >
                       <div v-if="each.title">
                         <div
@@ -172,13 +168,16 @@
                           "
                           class="pa-3 slider-font"
                         >
-                          <b class="pl-0 selected-slider slider-font">
+                          <b
+                            style="color: #0fcffc"
+                            class="pl-0 selected-slider slider-font"
+                          >
                             &nbsp; {{ each.title }}
                           </b>
                         </div>
                         <div
                           v-else
-                          class="pa-3"
+                          class="pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
                           style="border-left: 2px solid #696969"
                         >
@@ -411,7 +410,7 @@ let setActiveStep = async (stepNumber) => {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 50%;
   width: 80%;
 }
 .ellipse-main {
@@ -429,11 +428,12 @@ let setActiveStep = async (stepNumber) => {
     font-size: 57px;
   }
   .service-subtitle {
-    font-size: 46px;
+    font-size: 43px;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 50%;
+    line-height: 1.2;
     width: 80%;
   }
   .service-description {
@@ -442,7 +442,7 @@ let setActiveStep = async (stepNumber) => {
     left: 50%;
     font-weight: 300;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 50%;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -454,7 +454,7 @@ let setActiveStep = async (stepNumber) => {
     left: 35%;
   }
   .service-subtitle {
-    font-size: 46px;
+    font-size: 43px;
   }
   .service-description {
     font-size: 20px;
@@ -475,7 +475,7 @@ let setActiveStep = async (stepNumber) => {
     transform: translate(-50%, -50%);
   }
   .service-subtitle {
-    font-size: 43px;
+    font-size: 40px;
   }
   .service-description {
     font-size: 18px;
@@ -517,7 +517,7 @@ let setActiveStep = async (stepNumber) => {
     transform: translate(-50%, -50%);
   }
   .service-subtitle {
-    font-size: 40px;
+    font-size: 38px;
     position: relative;
   }
   .service-description {

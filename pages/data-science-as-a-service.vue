@@ -128,11 +128,7 @@
               <v-row class="d-flex d-md-none justify-center text-center">
                 <v-col xl="3" lg="4" md="4" sm="6" cols="5" class="py-0">
                   <v-sheet style="background: transparent" class="pa-3">
-                    <v-img
-                      :aspect-ratio="1 / 1"
-                      :src="each.src"
-                    >
-                    </v-img>
+                    <v-img :aspect-ratio="1 / 1" :src="each.src"> </v-img>
                   </v-sheet>
                 </v-col>
 
@@ -158,7 +154,7 @@
                 <v-row class="justify-center">
                   <v-col class="my-auto" lg="7" md="9" sm="8" cols="12">
                     <div
-                    style="cursor: pointer;"
+                      style="cursor: pointer"
                       class="slider-container"
                       v-for="(each, j) in serviceItems"
                       :key="j"
@@ -173,13 +169,16 @@
                           "
                           class="pa-3 slider-font"
                         >
-                          <b class="pl-0 selected-slider slider-font">
+                          <b
+                            class="pl-0 selected-slider slider-font"
+                            style="color: #0fcffc"
+                          >
                             &nbsp; {{ each.title }}
                           </b>
                         </div>
                         <div
                           v-else
-                          class="pa-3"
+                          class="pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
                           style="border-left: 2px solid #696969"
                         >
@@ -213,18 +212,18 @@
                       <v-card-text
                         class="text-white"
                         v-html="selectedService.subtitle"
-                        style=" font-weight: 300;"
+                        style="font-weight: 300"
                       >
                       </v-card-text>
                       <v-card-text>
-                        <ul style="list-style-type: circle;">
+                        <ul style="list-style-type: circle">
                           <li
                             style="
                               font-size: 14px;
                               margin-left: 10px;
                               list-style-type: circle;
                               font-weight: 300;
-                                color: #DBDFEA;
+                              color: #dbdfea;
                             "
                             v-for="(n, k) in selectedService.description"
                             :key="k"
@@ -380,14 +379,14 @@ let setActiveStep = async (stepNumber) => {
   font-weight: 300;
   font-size: 17px;
   line-height: 1.2;
-   color: #DBDFEA;;
+  color: #dbdfea;
 }
 .service-subtitle {
   font-size: 46px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 50%;
   width: 80%;
   font-weight: 500;
 }
@@ -396,9 +395,9 @@ let setActiveStep = async (stepNumber) => {
   position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
-  top: 40%;
+  top: 50%;
   width: 80%;
-    color: #DBDFEA;
+  color: #dbdfea;
 }
 .ellipse-main {
   position: absolute;
@@ -419,7 +418,8 @@ let setActiveStep = async (stepNumber) => {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 50%;
+    line-height: 1.2;
     width: 80%;
   }
   .service-description {
@@ -440,7 +440,7 @@ let setActiveStep = async (stepNumber) => {
     left: 35%;
   }
   .service-subtitle {
-    font-size: 46px;
+    font-size: 43px;
   }
   .service-description {
     font-size: 20px;
@@ -461,7 +461,7 @@ let setActiveStep = async (stepNumber) => {
     transform: translate(-50%, -50%);
   }
   .service-subtitle {
-    font-size: 43px;
+    font-size: 40px;
   }
   .service-description {
     font-size: 18px;
@@ -607,5 +607,11 @@ let setActiveStep = async (stepNumber) => {
   border-radius: 10px;
   cursor: pointer;
   z-index: 99 !important;
+}
+</style>
+<style>
+.onHoverUnderline:hover {
+  text-decoration: underline;
+  color: #0fcffc;
 }
 </style>
