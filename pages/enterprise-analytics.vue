@@ -261,7 +261,7 @@ let items = [
     title: "Innovation at Our Core",
     description:
       "Analytic initiatives are not just reports. Data wisdom from your analytics is about competitive advantage and innovation.",
-    src: "/images/services/incorta/a.png",
+    src: "/images/services/enterprise-analytics/a.png",
   },
   {
     title: "Domain Expertise",
@@ -273,7 +273,7 @@ let items = [
     title: "Business Focus",
     description:
       "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
-    src: "/images/services/idea/c.png",
+    src: "/images/services/enterprise-analytics/c.png",
   },
   {
     title: "Modern Architecture",

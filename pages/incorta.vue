@@ -271,7 +271,7 @@ let items = [
     title: "Business Focus",
     description:
       "We make sure business needs are aligned with technology and all the process solutions we bring to the table.",
-    src: "/images/services/idea/c.png",
+    src: "/images/services/incorta/c.png",
   },
   {
     title: "Advanced Analytics",

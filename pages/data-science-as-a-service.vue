@@ -252,37 +252,37 @@ let items = [
     title: "Scalable like Cloud",
     description:
       "Just like your subscribe to cloud, subscribe to DSaaS. Turn it on and off depending on your needs.",
-    src: "/images/services/data-as-service/scalable-like-cloud.png",
+    src: "/images/services/data-as-service/a.png",
   },
   {
     title: "Cost Effective",
     description:
       "Predictable and upfront run-rate allows you to control the costs and manage your budgets.",
-    src: "/images/services/data-as-service/cost-effective.png",
+    src: "/images/services/data-as-service/b.png",
   },
   {
     title: "Build with Open Tools",
     description:
       "Do you have a toolset in mind? Let’s use it. If not we will work with you to establish an open toolset.",
-    src: "/images/services/data-as-service/open-tools.png",
+    src: "/images/services/data-as-service/c.png",
   },
   {
     title: "Tactical and Strategic",
     description:
       "Our unique model allows you to experiment with different AI models and be strategic at the same time.",
-    src: "/images/services/data-as-service/tactical.png",
+    src: "/images/services/data-as-service/d.png",
   },
   {
     title: "Configurable Models",
     description:
       "We will work with you to establish a model and run-rate that works for your needs and budgets.",
-    src: "/images/services/data-as-service/configure.png",
+    src: "/images/services/data-as-service/e.png",
   },
   {
     title: "Mitigate Risk",
     description:
       "Our pay-as-you-go approach allows you take complete control of your project and reduce risk.",
-    src: "/images/services/data-as-service/mitigate.png",
+    src: "/images/services/enterprise-analytics/f.png",
   },
 ];
 let serviceItems = [
