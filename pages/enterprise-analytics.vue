@@ -319,7 +319,7 @@ let serviceItems = [
 ];
 let selectedService = ref({
   title: "Transform Data Into Insights",
-  src: "/images/services/incorta/1.png",
+  src: "/images/services/enterprise-analytics/1.png",
   subtitle:
     "We create significant value in the process of enabling your applied Analytics solutions. Waterfall or agile delivery can be considered based on how quickly you need to show meaningful results and ROI. Utilize our right-shore model to best match your budget and culture. Because we are objectives driven, our goal is always to make the project and our working relationship successful.",
   description: [],
