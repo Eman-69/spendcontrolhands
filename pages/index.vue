@@ -39,5 +39,6 @@ const handleScroll = () => {
 }
 .container > div {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
 }
 </style>
