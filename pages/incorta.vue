@@ -108,7 +108,7 @@
               v-for="(each, i) in items"
               :key="i"
             >
-              <v-row class="d-none d-md-flex">
+              <v-row class="d-none d-md-flex hover-card">
                 <v-col xl="3" lg="4" md="4" sm="6" cols="5">
                   <v-sheet style="background: transparent" class="pa-3">
                     <v-img :aspect-ratio="1 / 1" :src="each.src"> </v-img>
@@ -366,7 +366,7 @@ let setActiveStep = async (stepNumber) => {
   height: 100vh;
 }
 .section {
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-align: unset;
   /* scroll-snap-stop: always; */
 }

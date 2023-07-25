@@ -109,7 +109,7 @@
               v-for="(each, i) in items"
               :key="i"
             >
-              <v-row class="d-none d-md-flex">
+              <v-row class="d-none d-md-flex hover-card">
                 <v-col xl="3" lg="4" md="4" sm="6" cols="5">
                   <v-sheet style="background: transparent" class="pa-3">
                     <v-img :aspect-ratio="1 / 1" :src="each.src"> </v-img>
@@ -349,7 +349,7 @@ let setActiveStep = async (stepNumber) => {
   height: 100vh;
 }
 .section {
-  height: 100vh;
+  /* height: 100vh; */
   scroll-snap-align: unset;
   /* scroll-snap-stop: always; */
 }
@@ -613,5 +613,13 @@ let setActiveStep = async (stepNumber) => {
 .onHoverUnderline:hover {
   text-decoration: underline;
   color: #0fcffc;
+}
+.hover-card:hover {
+  cursor: pointer;
+  -webkit-box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
+  -moz-box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
+  box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
+  border-radius: 20px;
+  transition: all 500ms;
 }
 </style>
