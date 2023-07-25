@@ -131,7 +131,7 @@
                   <v-sheet style="background: transparent" class="pa-3">
                     <v-img
                       :aspect-ratio="1 / 1"
-                      src="/images/services/data-as-service/scalable-like-cloud.png"
+                      :src="each.src"
                     >
                     </v-img>
                   </v-sheet>
@@ -159,6 +159,7 @@
                 <v-row class="justify-center">
                   <v-col class="my-auto" lg="7" md="9" sm="8" cols="12">
                     <div
+                    style="cursor:pointer"
                       class="slider-container"
                       v-for="(each, j) in serviceItems"
                       :key="j"

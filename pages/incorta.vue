@@ -129,7 +129,7 @@
                   <v-sheet style="background: transparent" class="pa-3">
                     <v-img
                       :aspect-ratio="1 / 1"
-                      src="/images/services/data-as-service/scalable-like-cloud.png"
+                      :src="each.src"
                     >
                     </v-img>
                   </v-sheet>
@@ -160,6 +160,7 @@
                       class="slider-container"
                       v-for="(each, j) in serviceItems"
                       :key="j"
+                      style="cursor:pointer"
                     >
                       <div v-if="each.title">
                         <div
