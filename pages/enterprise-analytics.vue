@@ -3,7 +3,7 @@
     <!-- <div class="nav"><Navbar /></div> -->
     <div class="container" ref="el">
       <!-- section 1 -->
-      <div class="section justify-center">
+      <div class="justify-center">
         <!-- section 1 a-->
         <v-container
           fluid
@@ -46,55 +46,57 @@
           <div class="service-title">Enterprise Analytics</div>
         </v-container>
         <!-- section 1b -->
-        <v-container fluid class="section1a">
-          <v-row class="fill-height d-none d-md-flex">
-            <v-col
-              class="fill-height my-auto"
-              style="position: relative"
-              xl="6"
-              lg="6"
-              md="6"
-              sm="12"
-              cols="12"
-            >
-              <div class="my-auto service-subtitle">
-                Successful Projects Start with the Right Partners
-              </div>
-            </v-col>
-            <v-col
-              class="fill-height my-auto"
-              xl="6"
-              lg="6"
-              md="6"
-              sm="12"
-              cols="12"
-              style="position: relative"
-            >
-              <div class="my-auto service-description">
-                It’s not about small or large. What matters most is doing it
-                right.
-                <br />
-                We deliver the right methods for today’s analytics initiatives
-                to help you gain competitive advantage.
-              </div>
-            </v-col>
-          </v-row>
-          <v-container class="fill-height d-block d-md-none my-auto">
-            <v-row class="fill-height my-auto">
+        <div style="height: 50vh">
+          <v-container fluid class="d-none d-md-block fill-height">
+            <v-row class="fill-height">
+              <v-col
+                class="my-auto fill-height"
+                style="position: relative"
+                xl="6"
+                lg="6"
+                md="6"
+                sm="12"
+                cols="12"
+              >
+                <div class="my-auto service-subtitle">
+                  Successful Projects Start with the Right Partners
+                </div>
+              </v-col>
+              <v-col
+                class="my-auto fill-height"
+                xl="6"
+                lg="6"
+                md="6"
+                sm="12"
+                cols="12"
+                style="position: relative"
+              >
+                <div class="my-auto service-description">
+                  It’s not about small or large. What matters most is doing it
+                  right.
+                  <br />
+                  We deliver the right methods for today’s analytics initiatives
+                  to help you gain competitive advantage.
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+          <v-container class="d-block d-md-none my-auto fill-height">
+            <v-row class="my-auto fill-height">
               <v-col cols="12" class="my-auto service-subtitle-small">
-                It’s not about small or large. What matters most is doing it
-                right.
+                Successful Projects Start with the Right Partners
               </v-col>
 
               <v-col cols="12" class="my-auto service-description-small">
-                Power Partners for a Modern Analytics Platform.
+                It’s not about small or large. What matters most is doing it
+                right.
                 <br />
                 We deliver the right methods for today’s analytics initiatives
                 to help you gain competitive advantage.
               </v-col>
             </v-row>
           </v-container>
-        </v-container>
+        </div>
       </div>
       <div class="section">
         <v-divider class="text-white"></v-divider>
@@ -181,8 +183,10 @@
                           v-else
                           class="pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
-                          style="border-left: 2px solid #696969;
-                          text-decoration: underline;"
+                          style="
+                            border-left: 2px solid #696969;
+                            text-decoration: underline;
+                          "
                         >
                           &nbsp; {{ each.title }}
                         </div>
@@ -416,7 +420,6 @@ let setActiveStep = async (stepNumber) => {
     left: 50%;
     font-weight: 300;
     transform: translate(-50%, -50%);
-    top: 50%;
   }
 }
 @media only screen and (max-width: 1440px) {

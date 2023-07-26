@@ -314,12 +314,12 @@ let tab = ref(null);
 }
 .subtitle-text {
   font-weight: 300;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .title-text {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 19px;
 }
 @media only screen and (max-width: 800px) {
   .subtitle-text {

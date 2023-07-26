@@ -45,41 +45,44 @@
           <div class="service-title">Data Science as a Service</div>
         </v-container>
         <!-- section 1b -->
-        <v-container fluid class="section1a">
-          <v-row class="fill-height d-none d-md-flex">
-            <v-col
-              class="fill-height my-auto"
-              style="position: relative"
-              xl="6"
-              lg="6"
-              md="6"
-              sm="12"
-              cols="12"
-            >
-              <div class="my-auto service-subtitle">
-                Industry’s First “as a Service” Consulting Model
-              </div>
-            </v-col>
-            <v-col
-              class="fill-height my-auto"
-              xl="6"
-              lg="6"
-              md="6"
-              sm="12"
-              cols="12"
-              style="position: relative"
-            >
-              <div class="my-auto service-description">
-                Are you ready to get started or accelerate your Data Science, AI
-                or ML initiatives? We offer a revolutionary “as a service”
-                approach to scale the direction and costs of Data Science.
-                Everything you need and nothing you don’t make this a game
-                changer.
-              </div>
-            </v-col>
-          </v-row>
-          <v-container class="fill-height d-block d-md-none my-auto">
-            <v-row class="my-auto">
+
+        <div style="height: 50vh">
+          <v-container fluid class="d-none d-md-block fill-height">
+            <v-row class="fill-height">
+              <v-col
+                class="my-auto fill-height"
+                style="position: relative"
+                xl="6"
+                lg="6"
+                md="6"
+                sm="12"
+                cols="12"
+              >
+                <div class="my-auto service-subtitle">
+                  Industry’s First “as a Service” Consulting Model
+                </div>
+              </v-col>
+              <v-col
+                class="my-auto fill-height"
+                xl="6"
+                lg="6"
+                md="6"
+                sm="12"
+                cols="12"
+                style="position: relative"
+              >
+                <div class="my-auto service-description">
+                  Are you ready to get started or accelerate your Data Science,
+                  AI or ML initiatives? We offer a revolutionary “as a service”
+                  approach to scale the direction and costs of Data Science.
+                  Everything you need and nothing you don’t make this a game
+                  changer.
+                </div>
+              </v-col>
+            </v-row>
+          </v-container>
+          <v-container class="d-block d-md-none my-auto fill-height">
+            <v-row class="my-auto fill-height">
               <v-col cols="12" class="my-auto service-subtitle-small">
                 Industry’s First “as a Service” Consulting Model
               </v-col>
@@ -93,9 +96,10 @@
               </v-col>
             </v-row>
           </v-container>
-        </v-container>
+        </div>
       </div>
-      <div class="">
+
+      <div class="section">
         <v-divider class="text-white"></v-divider>
         <!-- <div class="section-margin-top"></div> -->
         <v-container>
@@ -348,7 +352,7 @@ let setActiveStep = async (stepNumber) => {
   height: 100vh;
 }
 .section {
-  /* height: 100vh; */
+  height: 100vh;
   scroll-snap-align: unset;
   /* scroll-snap-stop: always; */
 }
@@ -417,7 +421,6 @@ let setActiveStep = async (stepNumber) => {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 50%;
     line-height: 1.2;
     width: 80%;
   }
@@ -427,7 +430,7 @@ let setActiveStep = async (stepNumber) => {
     left: 50%;
     font-weight: 300;
     transform: translate(-50%, -50%);
-    top: 40%;
+    top: 50%;
   }
 }
 @media only screen and (max-width: 1440px) {
@@ -560,7 +563,7 @@ let setActiveStep = async (stepNumber) => {
   }
 }
 .section1a {
-  height: 40vh;
+  /* height: 40vh; */
 }
 .section1b {
   height: 60vh;
