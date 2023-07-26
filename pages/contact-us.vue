@@ -14,14 +14,13 @@
             <v-sheet style="background: transparent">
               <v-tabs
                 style="border-radius: 30px"
-                bg-color="grey-darken-4"
                 color="white"
                 v-model="tab"
                 align-tabs="center"
               >
-                <v-tab color="" value="1">USA</v-tab>
-                <v-tab color="" value="2">DUBAI</v-tab>
-                <v-tab color="" value="3">HYDERABAD</v-tab>
+                <v-tab class="text-white" value="1">USA</v-tab>
+                <v-tab class="text-white" value="2">DUBAI</v-tab>
+                <v-tab class="text-white" value="3">HYDERABAD</v-tab>
               </v-tabs>
               <v-window v-model="tab">
                 <v-window-item value="1">
@@ -30,29 +29,34 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
-                    <v-img src="/images/map-icon.png"  style="
+                    <v-img
+                      src="/images/map-icon.png"
+                      style="
                         position: absolute;
-                        top: 45%;
+                        top: 30%;
                         left: 20%;
                         width: 1.5%;
                         transform: translate(-45%, -20%);
-                      "></v-img>
+                      "
+                    ></v-img>
                     <div
                       class="text-center"
                       style="
                         position: absolute;
-                        top: 50%;
+                        top: 35%;
                         left: 20%;
                         width: 90%;
                         transform: translate(-50%, -20%);
                       "
                     >
                       <div>
-                        <strong class="text-white">USA: </strong>
+                        <strong class="text-white font-weight-bold title-text"
+                          >USA:
+                        </strong>
                       </div>
-                      <small class="text-white"
-                        >4500 Westgrove Dr Addison TX 75001</small
-                      >
+                      <div class="text-white font-weight-thin subtitle-text">
+                        4500 Westgrove Dr Addison TX 75001
+                      </div>
                     </div>
                   </v-sheet>
                 </v-window-item>
@@ -62,13 +66,16 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
-                     <v-img src="/images/map-icon.png"  style="
+                    <v-img
+                      src="/images/map-icon.png"
+                      style="
                         position: absolute;
-                        top: 53%;
+                        top: 50%;
                         left: 60%;
                         width: 1.5%;
                         transform: translate(-52%, -60%);
-                      "></v-img>
+                      "
+                    ></v-img>
                     <div
                       class="text-center"
                       style="
@@ -80,12 +87,14 @@
                       "
                     >
                       <div>
-                        <strong class="text-white"> Dubai: </strong>
+                        <strong class="text-white font-weight-bold title-text">
+                          Dubai:
+                        </strong>
                       </div>
-                      <small class="text-white">
+                      <div class="text-white font-weight-thin subtitle-text">
                         Dubai Downtown Standard Chartered Building, Level 5 Opp.
                         Emaar Square, Dubai, UAE
-                      </small>
+                      </div>
                     </div>
                   </v-sheet>
                 </v-window-item>
@@ -95,30 +104,34 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
-                    <v-img src="/images/map-icon.png"  style="
+                    <v-img
+                      src="/images/map-icon.png"
+                      style="
                         position: absolute;
-                        top: 53%;
-                        left: 69%;
+                        top: 57%;
+                        left: 68%;
                         width: 1.5%;
                         transform: translate(-52%, -60%);
-                      "></v-img>
+                      "
+                    ></v-img>
                     <div
                       class="text-center"
                       style="
                         position: absolute;
-                        top: 58%;
-                        left: 69%;
+                        top: 65%;
+                        left: 68%;
                         width: 90%;
                         transform: translate(-50%, -50%);
                       "
                     >
                       <div>
-                        <strong class="text-white"> Hyderabad: </strong>
+                        <strong class="text-white font-weight-bold title-text">
+                          Hyderabad:
+                        </strong>
                       </div>
-                      <small class="text-white"
-                        >B2 405 & 406 Manjeera Trinity Corporate Hyderabad
-                        500072</small
-                      >
+                      <div class="text-white font-weight-thin subtitle-text">
+                        B2 405 & 406 Manjeera Trinity Corporate Hyderabad 500072
+                      </div>
                     </div>
                   </v-sheet>
                 </v-window-item>
@@ -234,18 +247,11 @@
               </v-row>
             </v-container>
           </div>
-          <v-container class="my-5">
-            <h1>Address</h1>
+          <v-container class="mt-5 mb-15">
+            <h2 class="text-white text-center">Address</h2>
+            <br />
             <v-row class="justify-center">
-              <v-col>
-                <div>
-                  <strong class="text-white">USA: </strong>
-                </div>
-                <small class="text-white"
-                  >4500 Westgrove Dr Addison TX 75001</small
-                >
-              </v-col>
-              <v-col>
+              <v-col class="text-center my-auto">
                 <div>
                   <strong class="text-white"> Dubai: </strong>
                 </div>
@@ -254,7 +260,15 @@
                   Square, Dubai, UAE
                 </small>
               </v-col>
-              <v-col>
+              <v-col class="text-center my-auto">
+                <div>
+                  <strong class="text-white">USA: </strong>
+                </div>
+                <small class="text-white"
+                  >4500 Westgrove Dr Addison TX 75001</small
+                >
+              </v-col>
+              <v-col class="text-center my-auto">
                 <div>
                   <strong class="text-white"> Hyderabad: </strong>
                 </div>
@@ -264,11 +278,18 @@
                 >
               </v-col>
             </v-row>
-            <v-divider></v-divider>
-            <h1>Email</h1>
+            <v-divider class="text-white my-5"></v-divider>
+            <h2 class="text-white text-center">Email</h2>
 
-            <v-row class="ml-1">
-              <p>info@kenfront.com</p>
+            <v-row class="text-center">
+              <v-col>
+                <a
+                  style="text-decoration: none"
+                  href="mailto:info@kenfront.com"
+                >
+                  <p class="text-center">info@kenfront.com</p>
+                </a>
+              </v-col>
             </v-row>
           </v-container>
         </div>
@@ -291,19 +312,34 @@ let tab = ref(null);
   background-size: cover;
   background-position: center center;
 }
-small{
+.subtitle-text {
   font-weight: 300;
   font-size: 16px;
 }
 
-strong{
+.title-text {
   font-weight: 500;
   font-size: 16px;
 }
-@media only screen and (max-width:800px)
-{
-  strong,small{
-    font-size: 12px;
+@media only screen and (max-width: 800px) {
+  .subtitle-text {
+    font-size: 8px;
+  }
+  .title-text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .subtitle-text {
+    font-size: 9px;
+    line-height: 1;
+  }
+  .title-text {
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 1;
   }
 }
 </style>

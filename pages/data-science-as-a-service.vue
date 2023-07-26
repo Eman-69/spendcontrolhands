@@ -152,7 +152,7 @@
             <v-col>
               <v-container fluid>
                 <v-row class="justify-center">
-                  <v-col class="my-auto" lg="7" md="9" sm="8" cols="12">
+                  <v-col class="my-auto" xl="7" lg="6" md="9" sm="8" cols="12">
                     <div
                       style="cursor: pointer"
                       class="slider-container"
@@ -166,15 +166,12 @@
                           style="
                             position: relative;
                             border-left: 2px solid #696969;
-                            text-decoration: underline;
-                            color: #068FFF;
+                            background-color: #068fff;
+                            border-radius: 20px;
                           "
                           class="pa-3 slider-font"
                         >
-                          <b
-                            class="pl-0 selected-slider slider-font"
-                            style="color: #0fcffc"
-                          >
+                          <b class="pl-0 selected-slider slider-font">
                             &nbsp; {{ each.title }}
                           </b>
                         </div>
@@ -182,14 +179,14 @@
                           v-else
                           class="pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
-                          style="border-left: 2px solid #696969"
+                          style="border-left: 2px solid #d3d2d2"
                         >
                           &nbsp; {{ each.title }}
                         </div>
                       </div>
                     </div>
                   </v-col>
-                  <v-col lg="4" md="3" sm="3" cols="8" class="my-auto">
+                  <v-col xl="4" lg="5" md="3" sm="3" cols="8" class="my-auto">
                     <v-sheet
                       style="background: transparent"
                       v-if="selectedService"
@@ -614,13 +611,13 @@ let setActiveStep = async (stepNumber) => {
 <style>
 .onHoverUnderline:hover {
   text-decoration: underline;
-  color: #0fcffc;
+  text-underline-offset: 2px;
 }
 .hover-card:hover {
   cursor: pointer;
-  -webkit-box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
-  -moz-box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
-  box-shadow: inset 200px 200px 299px 5px rgba(45, 112, 253, 0.9);
+
+  background: #0fcffc;
+
   border-radius: 20px;
   transition: all 500ms;
 }
