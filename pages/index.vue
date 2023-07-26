@@ -21,6 +21,11 @@ const handleScroll = () => {
   const scrollHeight = el.value.scrollHeight;
   const clientHeight = el.value.clientHeight;
   scrollPer.value = (scrollTop / (scrollHeight - clientHeight)) * 100;
+
+  // Increase the scroll time by 2 seconds (2000 milliseconds)
+  el.value.style.scrollBehavior = "smooth";
+  el.value.style.scrollDuration = "2000";
+  console.log(el.value.style);
 };
 </script>
 
@@ -34,11 +39,11 @@ const handleScroll = () => {
 .container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  scroll-behavior: smooth;
   height: 100vh;
+  scroll-behavior: smooth;
 }
 .container > div {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
+  scroll-snap-stop: always !important;
 }
 </style>
