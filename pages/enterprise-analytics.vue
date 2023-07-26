@@ -182,8 +182,7 @@
                           class="pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
                           style="border-left: 2px solid #696969;
-                          text-decoration: underline;
-                          color: #068FFF;"
+                          text-decoration: underline;"
                         >
                           &nbsp; {{ each.title }}
                         </div>
