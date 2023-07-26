@@ -173,17 +173,23 @@
                             background-color: #068fff;
                             border-radius: 20px;
                           "
-                          class="pa-3 slider-font"
+                          class="pa-xl-6 pa-lg-5 pa-md-4 pa-3 slider-font"
                         >
-                          <b class="pl-0 selected-slider slider-font">
+                          <b
+                            class="pl-0 selected-slider slider-font"
+                            style="color: #ffffff"
+                          >
                             &nbsp; {{ each.title }}
                           </b>
                         </div>
                         <div
                           v-else
-                          class="pa-3 onHoverUnderline"
+                          class="pa-xl-6 pa-lg-5 pa-md-4 pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
-                          style="border-left: 2px solid #d3d2d2"
+                          style="
+                            border-left: 2px solid #696969;
+                            text-decoration: underline;
+                          "
                         >
                           &nbsp; {{ each.title }}
                         </div>

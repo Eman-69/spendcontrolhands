@@ -153,7 +153,7 @@
             <v-col>
               <v-container fluid>
                 <v-row class="justify-center">
-                  <v-col class="my-auto" lg="7" md="9" sm="8" cols="12">
+                  <v-col class="my-auto" xl="7" lg="6" md="9" sm="8" cols="12">
                     <div
                       style="cursor: pointer"
                       class="slider-container"
@@ -167,30 +167,33 @@
                           style="
                             position: relative;
                             border-left: 2px solid #696969;
-                            text-decoration: underline;
-                            color: #068fff;
+                            background-color: #068fff;
+                            border-radius: 20px;
                           "
-                          class="pa-3 slider-font"
+                          class="pa-xl-6 pa-lg-5 pa-md-4 pa-3 slider-font"
                         >
                           <b
-                            style="color: #0fcffc"
                             class="pl-0 selected-slider slider-font"
+                            style="color: #ffffff"
                           >
                             &nbsp; {{ each.title }}
                           </b>
                         </div>
                         <div
                           v-else
-                          class="pa-3 onHoverUnderline"
+                          class="pa-xl-6 pa-lg-5 pa-md-4 pa-3 onHoverUnderline"
                           @click="setActiveStep(j)"
-                          style="border-left: 2px solid #696969"
+                          style="
+                            border-left: 2px solid #696969;
+                            text-decoration: underline;
+                          "
                         >
                           &nbsp; {{ each.title }}
                         </div>
                       </div>
                     </div>
                   </v-col>
-                  <v-col lg="4" md="3" sm="3" cols="8" class="my-auto">
+                  <v-col xl="4" lg="5" md="3" sm="3" cols="8" class="my-auto">
                     <v-sheet
                       style="background: transparent"
                       v-if="selectedService"
