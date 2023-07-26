@@ -170,6 +170,8 @@
                           style="
                             position: relative;
                             border-left: 2px solid #696969;
+                            text-decoration: underline;
+                            color: #068FFF;
                           "
                           class="pa-3 slider-font"
                         >
@@ -258,13 +260,13 @@ let items = [
     title: "Cost Effective",
     description:
       "Predictable and upfront run-rate allows you to control the costs and manage your budgets.",
-    src: "/images/services/data-as-service/b.png",
+    src: "/images/services/enterprise-analytics/e.png",
   },
   {
     title: "Build with Open Tools",
     description:
       "Do you have a toolset in mind? Let’s use it. If not we will work with you to establish an open toolset.",
-    src: "/images/services/data-as-service/c.png",
+    src: "/images/services/data-as-service/b.png",
   },
   {
     title: "Tactical and Strategic",
@@ -276,13 +278,13 @@ let items = [
     title: "Configurable Models",
     description:
       "We will work with you to establish a model and run-rate that works for your needs and budgets.",
-    src: "/images/services/data-as-service/e.png",
+    src: "/images/services/data-as-service/c.png",
   },
   {
     title: "Mitigate Risk",
     description:
       "Our pay-as-you-go approach allows you take complete control of your project and reduce risk.",
-    src: "/images/services/enterprise-analytics/f.png",
+    src: "/images/services/data-as-service/e.png",
   },
 ];
 let serviceItems = [

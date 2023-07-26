@@ -182,7 +182,9 @@
                           v-else
                           class="pa-3"
                           @click="setActiveStep(j)"
-                          style="border-left: 2px solid #696969"
+                          style="border-left: 2px solid #696969;
+                          text-decoration: underline;
+                          color: #068FFF;"
                         >
                           &nbsp; {{ each.title }}
                         </div>

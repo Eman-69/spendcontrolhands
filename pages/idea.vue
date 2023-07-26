@@ -169,6 +169,8 @@
                           style="
                             position: relative;
                             border-left: 2px solid #696969;
+                            text-decoration: underline;
+                            color: #068FFF;
                           "
                           class="pa-3 slider-font"
                         >

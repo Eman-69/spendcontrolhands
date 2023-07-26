@@ -30,14 +30,21 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
+                    <v-img src="/images/map-icon.png"  style="
+                        position: absolute;
+                        top: 45%;
+                        left: 20%;
+                        width: 1.5%;
+                        transform: translate(-45%, -20%);
+                      "></v-img>
                     <div
                       class="text-center"
                       style="
                         position: absolute;
                         top: 50%;
-                        left: 50%;
+                        left: 20%;
                         width: 90%;
-                        transform: translate(-50%, -50%);
+                        transform: translate(-50%, -20%);
                       "
                     >
                       <div>
@@ -55,12 +62,19 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
+                     <v-img src="/images/map-icon.png"  style="
+                        position: absolute;
+                        top: 53%;
+                        left: 60%;
+                        width: 1.5%;
+                        transform: translate(-52%, -60%);
+                      "></v-img>
                     <div
                       class="text-center"
                       style="
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
+                        top: 58%;
+                        left: 60%;
                         width: 90%;
                         transform: translate(-50%, -50%);
                       "
@@ -81,12 +95,19 @@
                     style="position: relative; background: transparent"
                   >
                     <v-img src="/images/map-hyd.png"></v-img>
+                    <v-img src="/images/map-icon.png"  style="
+                        position: absolute;
+                        top: 53%;
+                        left: 69%;
+                        width: 1.5%;
+                        transform: translate(-52%, -60%);
+                      "></v-img>
                     <div
                       class="text-center"
                       style="
                         position: absolute;
-                        top: 50%;
-                        left: 50%;
+                        top: 58%;
+                        left: 69%;
                         width: 90%;
                         transform: translate(-50%, -50%);
                       "
@@ -213,7 +234,7 @@
               </v-row>
             </v-container>
           </div>
-          <v-container>
+          <v-container class="my-5">
             <h1>Address</h1>
             <v-row class="justify-center">
               <v-col>
@@ -246,7 +267,7 @@
             <v-divider></v-divider>
             <h1>Email</h1>
 
-            <v-row>
+            <v-row class="ml-1">
               <p>info@kenfront.com</p>
             </v-row>
           </v-container>
@@ -269,5 +290,20 @@ let tab = ref(null);
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+}
+small{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+strong{
+  font-weight: 500;
+  font-size: 16px;
+}
+@media only screen and (max-width:800px)
+{
+  strong,small{
+    font-size: 12px;
+  }
 }
 </style>
