@@ -34,7 +34,7 @@ onMounted(()=>{
     });
     questiondottl.add({
         targets:".question-dot",
-        scale:[0,0,0,1.2,0],
+        scale:[0,0,0,1.2,0,0],
         easing:"linear",
     });
 });

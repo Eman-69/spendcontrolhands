@@ -249,6 +249,7 @@
           </v-row>
         </v-container>
       </div>
+    <div id="footer"><Footer/></div>
     </div>
   </div>
 </template>

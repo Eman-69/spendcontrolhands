@@ -8,6 +8,7 @@
       <div id="id3"><LandingPage3 /></div>
       <div id="id4"><LandingPage4 :scrollPer="scrollPer" /></div>
       <div id="id5"><LandingPage5 /></div>
+      <div id="footer"><Footer/></div>
     </div>
   </div>
 </template>

@@ -129,7 +129,7 @@ template {
   position: absolute;
   top: -125vh;
   left: -51vw;
-  height: 180%;
+  height: 160%;
   width: 120%;
   display: grid;
   grid-template-columns: 1fr;
@@ -260,22 +260,22 @@ onMounted(() => {
     targets: "#ellipse",
     translateX: ellipsepath("x"),
     translateY: ellipsepath("y"),
-    scale: [1, 1, -0.8, 0, 0],
-    opacity: [1, 1, -0.8, 0, 0],
-    top: ["-125vh", "0vh", "-160vh", "-90vh", "-90vh"],
-    left: ["-51vw", "-51vw", "-22.5vw", "-22.5vw", "-22.5vw"],
+    scale: [1, 1, -0.8, 0, 0,0],
+    opacity: [1, 1, -0.8, 0, 0,0],
+    top: ["-125vh", "-30vh", "-50vh", "-90vh", "-90vh",, "-90vh"],
+    left: ["-51vw", "-51vw", "-22.5vw", "-22.5vw", "-22.5vw","-22.5vw"],
     easing: "easeOutQuad",
   });
   graphtl.add({
     targets: ".graph",
-    opacity: [0, 0, 1, 0, 0],
+    opacity: [0, 0, 1, 0, 0,0],
     easing: "steps(1)",
   });
   graphdottl.add({
     targets: ".graphdot",
-    opacity: [0, 0, 2, -2, -2],
-    top: ["34.5vh", "34.5vh", "34.5vh", "73vh", "73vh"],
-    right: ["145px", "145px", "145px", "100px", "100px"],
+    opacity: [0, 0, 2, -2, -2,-2],
+    top: ["34.5vh", "34.5vh", "34.5vh", "73vh", "73vh","73vh"],
+    right: ["145px", "145px", "145px", "100px", "100px","100px"],
     easing: "linear",
   });
   // questiondottl.add({
@@ -288,22 +288,22 @@ onMounted(() => {
   // });
   c1tl.add({
     targets: "#c1",
-    r: [740, 780, 780, 780, 780],
+    r: [740, 780, 780, 780, 780,780],
     easing: "easeOutElastic",
   });
   c2tl.add({
     targets: "#c2",
-    r: [760, 900, 900, 900, 900],
+    r: [760, 900, 900, 900, 900,900],
     easing: "easeOutElastic",
   });
   c3tl.add({
     targets: "#c3",
-    r: [780, 1000, 1000, 1000, 1000],
+    r: [780, 1000, 1000, 1000, 1000, 1000],
     easing: "easeOutElastic",
   });
   c4tl.add({
     targets: "#c4",
-    r: [800, 1100, 1100, 1100, 1100],
+    r: [800, 1100, 1100, 1100, 1100, 1100],
     easing: "easeOutElastic",
   });
   //   ellipsetl.add({
