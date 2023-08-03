@@ -1,6 +1,7 @@
 <template>
   <div class="main-background">
-    <div class="animation"><Animationcoin :scrollPer="scrollPer" /></div>
+    {{ scrollPer }}
+    <div class="animation"><Animationhand :scrollPer="scrollPer" /></div>
     <!-- <div class="nav"><Navbar /></div> -->
     <div class="container" ref="el" @scroll="handleScroll()">
       <div id="id1"></div>
@@ -8,6 +9,9 @@
       <div id="id3"></div>
       <div id="id4"></div>
       <div id="id5"></div>
+      <div id="id6"></div>
+      <div id="id7"></div>
+      <div id="id8"></div>
     </div>
   </div>
 </template>
